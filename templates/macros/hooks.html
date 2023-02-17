@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% macro inline_links(slugs, prefix, joiningWord) %}{% for slug in slugs %}{% if loop.last and loop.index0 > 0 %} {{ joiningWord }} {% endif %}<a href="{{ prefix }}{{ slug }}">{{ slug | capitalize }}</a>{% if not loop.last %},{% endif %}{% endfor %}{% endmacro inline_links %}
+
+{% macro tag_list(slugs, prefix, label) %}
+<ul class="tags">
+{% if label %}
+<li>{{ label }}</li>
+{% endif %}
+{% for slug in slugs %}
+<li><a href='{{ prefix }}{{ slug }}'>{{ slug | capitalize }}</a></li>
+{% endfor %}
+</ul>
+{% endmacro tag_list %}
+
+{# Page hooks #}
+{% macro post_above_content(page) %}
+    {% if page.taxonomies["projects"] or page.taxonomies["series"] or page.taxonomies["medium"] %}
+    <p><em>
+      {% if page.taxonomies["projects"] %}Part of the {{ hooks::inline_links(slugs=page.taxonomies["projects"],prefix='/projects/', joiningWord="and") }} project.{% endif %}
+      {% if page.taxonomies["series"] %}Part of the {{ hooks::inline_links(slugs=page.taxonomies["series"],prefix='/series/', joiningWord="and") }} series.{% endif %}
+      {% if page.taxonomies["medium"] %}Medium: {{ hooks::inline_links(slugs=page.taxonomies["medium"],prefix='/medium/', joiningWord="and") }}.{% endif %}
+    </em></p>
+    {% endif %}
+{% endmacro post_above_content %}
+
+{% macro post_below_tags(page) %}{% endmacro post_below_tags %}
+
+{% macro post_below_content(page) %}{% endmacro post_below_content %}
+
+{% macro posts_below_title(page) %}
+
+<ul class="tags subtle">
+{% if page.taxonomies is containing ("tags") %}
+  {% for tag in page.taxonomies["tags"] | sort %}
+    <li><a href='{{ config.base_url | safe }}/tags/{{ tag | slugify }}'>{{ tag }}</a></li>
+  {% endfor %}
+  {% endif %}
+</ul>
+{% endmacro posts_below_title %}

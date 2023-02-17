@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+{{ config.title }} | {{page.title}}
+{% endblock title %}
+
+{% block content %}
+<h1 class="title">
+    {{ page.title }}
+</h1>
+
+<article>{{ page.content | safe }}</article>
+
+
+<div id="disqus_thread"></div>
+
+<script>
+
+    var disqus_config = function () {
+        this.page.url = "{{ current_url | safe}}";      
+        this.page.identifier = "guestbook";     
+    };
+
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jimmyff.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">guestbook powered by Disqus.</a></noscript>
+
+
+{% endblock content %}
+

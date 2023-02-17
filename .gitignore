@@ -1,0 +1,25 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Zola
+public/
+static/processed_images/
+
+# If you cloned this repo for your own site remove this.
+# I ignore the theme as I will be developing it locally.
+# https://github.com/jimmyff/zola-inky
+themes/zola-inky

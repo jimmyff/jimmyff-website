@@ -1,0 +1,29 @@
+
+{# Returns all the values in a taxonmy, would be nice to sort by count #}
+{% macro values_for_pages(taxonmy, pages, label) %}
+{% set values = [] %}
+{% for page in pages %}
+    {% for current_taxonomy, taxonomy_values in page.taxonomies %}
+        {% if current_taxonomy == taxonmy %}      
+            {% for taxonomy_value in taxonomy_values %}
+           
+                {% if values is not containing(taxonomy_value) %}
+                    {% set_global values = values | concat(with=taxonomy_value) %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+{% set links = [] %}
+<ul class="tags">
+    {% if label %}
+    <li>{{ label }}</li>
+    {% endif %}
+    {% for term in values %}
+    <li><a href='/{{ taxonmy }}/{{ term }}'>{{ term | capitalize }}</a></li>
+{% endfor %}
+</ul>
+
+
+{% endmacro values_for_pages %}

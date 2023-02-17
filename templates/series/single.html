@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{taxonomy.name | capitalize }} &raquo; {{ term.name | capitalize }}</h1>
+
+{% for year, posts in term.pages | sort(attribute="date") | group_by(attribute="year") %}
+<ul class="series flat">
+  <h2 class="archive-year">{{ year }}</h2>
+  {% for post in posts %}
+  
+    <li class="post">
+
+      {% for image in post.extra.images %}
+        {% set image = resize_image(path=post.path ~ image, op="fit_width", width=384, format=config.extra.image_format, quality=70) %}
+          <div class="thumbnail">
+            <a href="{{ post.permalink | safe }}" title="{{ post.title }} - {{ post.date }}"><img src="{{ image.url }}" alt="{{ post.title }} - {{ post.date }}" /></a>
+          </div>
+        {% endfor %}
+        <div class="details">
+          <div class="post-header">
+          
+            <div class="matter">
+              <div class="title small">
+                <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+                {% if post.draft %}<span class="draft">Draft</span>{% endif %}
+              </div>
+              <div class="meta">
+                <div class="date-simple small">
+                  {{ post.date | date(format="%d %B %Y") }}
+                </div>
+              </div>
+              <span class="description"> {{post.description}} </span>
+            </div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+
+</ul>
+{% endfor %}
+  
+{% endblock content %}
