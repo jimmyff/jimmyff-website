@@ -22,4 +22,4 @@ jobs:
         env:
           REPOSITORY: jimmyff/jimmyff.github.io
           PAGES_BRANCH: main
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.ACCESS_TOKEN }}
