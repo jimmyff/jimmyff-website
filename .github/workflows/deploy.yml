@@ -1,0 +1,25 @@
+# On every push this script is executed
+
+name: Build and deploy GH Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3.0.0
+        with:
+          submodules: true
+          lfs: true
+      - name: build_and_deploy
+        uses: jimmyff/zola-deploy-action@v0.17.0
+        env:
+          REPOSITORY: jimmyff/jimmyff.github.io
+          PAGES_BRANCH: main
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
