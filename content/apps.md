@@ -9,9 +9,9 @@ I run a very small company called Rocketware. I set the company up back in 2011.
 
 ---
 
-## One Scene
+## One Scene, Only Women and Only Lads
 
-An modern inclusive dating app. This is my latest project, it's a reimagining of the dating product I launched back in 2011. I launched this app in December 2022 and it continues to be my main focus as I work to get it established.
+A collection of modern inclusive dating apps. This has been my latest project, it's a re-imagining of the dating product I launched back in 2011. I launched this app in December 2022 and it continues to be my main focus as I work to get it established. To find out more see [related blog posts](/tags/project-dating).
 
 Download One Scene on [Android](https://play.google.com/store/apps/details?id=com.onescene.app) or [iPhone](https://apps.apple.com/us/app/one-scene-dating-friends/id6443775589)
 
@@ -19,7 +19,7 @@ Download One Scene on [Android](https://play.google.com/store/apps/details?id=co
 
 ## Sticker Party
 
-I created this app originally in 5 days as a bit of a challenge for myself. It's now a lovely little photo editor allowing you add stickers to your photos. The stickers are all vector files so the look awesome no matter how zoomed in you go. To find out more see [related blog posts](/tags/stickerapp).
+I created this app originally in 5 days as a bit of a challenge for myself. It's now a lovely little photo editor allowing you add stickers to your photos. The stickers are all vector files so the look awesome no matter how zoomed in you go. To find out more see [related blog posts](/tags/project-sticker-app).
 
 Download Sticker Party on [Android](https://play.google.com/store/apps/details?id=uk.rocketware.stickerparty) or [iPhone](https://apps.apple.com/us/app/sticker-party/id1634193331)
 
