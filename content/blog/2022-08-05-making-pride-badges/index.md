@@ -3,7 +3,7 @@ title= "Making Pride badges"
 date= 2022-08-05
 draft= false
 [taxonomies]
-tags= ["badges", "pride"]
+tags= ["badges", "pride", "lgbtqi+"]
 +++
 
 I wanted to buy some progressive pride badges for this years pride so I turned to Etsy. I was pretty surprised at how much people were charging for them; £3.50 for a single badge. So classic me, I bought a badge making press!

@@ -17,7 +17,7 @@ I tend to find non-interactive things boring after a short-time, this is perhaps
 
 ## Coding & technology
 
-You can find my public work over on Github. I'm always creating something new! My main language is [Dart](/tags/dart), I'm in love with the Flutter framework. I'm also trying to level up my [Rust](/tags/lang-rust) skills. I'm a big fan of serveless technology and my preferred backend is Google Cloud.
+You can find my public work over on Github. I'm always creating something new! My main language is [Dart](/tags/lang-dart), I'm in love with the Flutter framework. I'm also trying to level up my [Rust](/tags/lang-rust) skills. I'm a big fan of serveless technology and my preferred backend is Google Cloud.
 
 ---
 

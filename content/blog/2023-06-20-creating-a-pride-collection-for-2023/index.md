@@ -3,7 +3,7 @@ title = "Creating a pride collection for 2023"
 date = 2023-06-20
 draft =  false
 [taxonomies]
-tags = ["pride"]
+tags = ["pride", "lgbtqi+"]
 medium = []
 series = [] #["pride"]
 [extra]
