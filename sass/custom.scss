@@ -65,12 +65,16 @@ img[src$='#pixelate'] {
     li a {
         padding: 0;
         border: 0;
-        color: var(--light-grey);
+        color: var(--subtle-links);
         margin: 0 0.5rem 0 0;
 
         &::before {
 
             content: "#";
+        }
+
+        &:hover {
+            color: var(--primary);
         }
 
     }
