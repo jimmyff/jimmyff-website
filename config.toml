@@ -68,6 +68,6 @@ menu_links = [
     { url = "$BASE_URL/blog/", name = "Blog" },
     { url = "$BASE_URL/gallery/", name = "Gallery" },
     { url = "$BASE_URL/apps/", name = "Apps" },
-    { url = "$BASE_URL/guestbook/", name = "Guestbook" },
+    # { url = "$BASE_URL/guestbook/", name = "Guestbook" },
     { url = "$BASE_URL/search/", name = "Search" },
 ]
