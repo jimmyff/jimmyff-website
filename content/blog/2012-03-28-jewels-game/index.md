@@ -3,7 +3,7 @@ title= "HTML5 Jewels Switching Game"
 date= 2012-03-28
 draft= false
 [taxonomies]
-tags= ["coding", "gamedev-digital", "gamedev", "lang-javascript"]
+tags= ["coding", "gamedev-digital", "lang-javascript"]
 +++
 
 <script src="../../shared_assets/rocketbox/rocketbox_1_0.js"></script>

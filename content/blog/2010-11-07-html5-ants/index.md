@@ -3,7 +3,7 @@ title= "HTML5 Ants!"
 date= 2010-11-07
 draft= false
 [taxonomies]
-tags= ["coding", "gamedev-digital", "gamedev", "lang-javascript"]
+tags= ["coding", "gamedev-digital", "lang-javascript"]
 +++
 
 I'm sat in a bar on the edge of the Mekong in Luang Prabang, Laos. There are tiny ants running backward and forward along the bar's balcony and I've decidedo it would be fun to try a little AI coding and create a virtual ant colony! Have a play below.

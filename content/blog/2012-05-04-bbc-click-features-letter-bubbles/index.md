@@ -3,7 +3,7 @@ title= "BBC Click features my Letter Bubbles game"
 date= 2012-05-04
 draft= false
 [taxonomies]
-tags= ["coding", "gamedev-digital", "gamedev", "lang-javascript"]
+tags= ["coding", "gamedev-digital", "lang-javascript"]
 projects= ["letter-bubbles"]
 +++
 

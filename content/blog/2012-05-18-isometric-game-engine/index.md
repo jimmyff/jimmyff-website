@@ -3,7 +3,7 @@ title= "Isometric HTML5 Game Engine"
 date= 2012-05-18
 draft= false
 [taxonomies]
-tags= ["coding", "gamedev-digital", "gamedev", "lang-javascript"]
+tags= ["coding", "gamedev-digital", "lang-javascript"]
 +++
 
 

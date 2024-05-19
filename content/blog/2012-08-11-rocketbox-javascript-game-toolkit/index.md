@@ -3,7 +3,7 @@ title= "RocketBox - HTML5 Toolkit"
 date= 2012-08-11
 draft= false
 [taxonomies]
-tags= ["coding", "gamedev-digital", "gamedev", "lang-javascript"]
+tags= ["coding", "gamedev-digital", "lang-javascript"]
 +++
 
 I've create numerous HTML5 apps recently and each time I start a new one, I go through the same process getting all the core components in place. This takes an hour or so and once complete I can finally start working on the actual app. It's for this reason that I decided to create [RocketBox](https://github.com/jimmyff/RocketBox) - a html5 game/demo/app toolkit. It's essentially a blackbox that abstracts away a lot of the headaches and boring stuff that developers face when they start a new project.

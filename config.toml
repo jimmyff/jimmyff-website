@@ -42,7 +42,7 @@ highlight_code = true
 google_analytics_tag_id = 'G-71ZN1D4H6Q'
 
 keywords = "jimmy, forrester-fellowes, jimmyff, jimmy3ds, yorkshire, leeds, developer"
-avatar = "/avatar_2021.webp"
+avatar = "/avatar_2024.webp"
 
 image_resizing_disabled = false
 image_format = "webp"           # "auto", "jpg", "png", "webp"
@@ -55,7 +55,8 @@ images_default_size = 1024
 images_sizes = [512, 1024, 2048]
 
 # link_twitter_username = "jimmyff_uk"
-link_mastodon_url = "https://fosstodon.org/@jimmyff"
+# link_mastodon_url = "https://fosstodon.org/@jimmyff"
+link_bluesky_url = "https://bsky.app/profile/faehound.games"
 link_github_username = "jimmyff"
 link_medium_username = "jimmyff"
 link_instagram_username = "jimmyff_art"
@@ -64,10 +65,10 @@ link_instagram_username = "jimmyff_art"
 disable_powered_by = false
 
 menu_links = [
-    { url = "$BASE_URL/", name = "About" },
-    { url = "$BASE_URL/blog/", name = "Blog" },
-    { url = "$BASE_URL/gallery/", name = "Gallery" },
-    { url = "$BASE_URL/apps/", name = "Apps" },
-    # { url = "$BASE_URL/guestbook/", name = "Guestbook" },
-    { url = "$BASE_URL/search/", name = "Search" },
+    { url = "$BASE_URL/", name = "About", emoji = "🏠" },
+    { url = "$BASE_URL/blog/", name = "Blog", emoji = "📖" },
+    { url = "$BASE_URL/gallery/", name = "Gallery", emoji = "🎨" },
+    { url = "$BASE_URL/apps/", name = "Apps", emoji = "📱" },
+    # { url = "$BASE_URL/guestbook/", name = "Guestbook", emoji = "🌍" },
+    { url = "$BASE_URL/search/", name = "Search", emoji = "🔎" },
 ]

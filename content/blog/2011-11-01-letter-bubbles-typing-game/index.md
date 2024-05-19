@@ -3,7 +3,7 @@ title= "Letter Bubbles: HTML5 typing game"
 date= 2011-11-01
 draft= false
 [taxonomies]
-tags= ["coding", "gamedev-digital", "gamedev", "lang-javascript"]
+tags= ["coding", "gamedev-digital","lang-javascript"]
 projects= ["letter-bubbles"]
 +++
 
