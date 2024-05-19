@@ -11,7 +11,7 @@ Welcome and hello! [I'm Jimmy](/series/self-portraits), a 90's teen that never r
 
 ## Analogue & digital gaming
 
-Gaming is one of my cornerstones, probably as I find non-interactive activities pretty boring! I love table top gaming as a way of gathering friends and family around a table and having a great joint experience (feel free to [connect on BoardGameGeek](https://boardgamegeek.com/user/jimmyff)). I love to  [design board games](/tags/gamedev-analogue/) and I've dabbled with [video game development](/tags/gamedev-digital) too. I'm a passionate gamer although I don't get much time for video games these days but I remain a die hard [Nintendo](/tags/nintendo) fan-boy.
+Gaming is one of my cornerstones, probably as I find non-interactive activities pretty boring! I love [table top gaming](/boardgames) as a way of gathering friends and family around a table and having a great joint experience (feel free to [connect on BoardGameGeek](https://boardgamegeek.com/user/jimmyff)). I love to  [design board games](/tags/gamedev-analogue/) and I've dabbled with [video game development](/tags/gamedev-digital) too. I'm a passionate gamer although I don't get much time for video games these days but I remain a die hard [Nintendo](/tags/nintendo) fan-boy.
 
 ---
 

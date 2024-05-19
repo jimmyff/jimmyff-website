@@ -1,0 +1,84 @@
+{% extends "base.html" -%}
+{% block title -%}
+{{ config.title }} | {{page.title}}
+{% endblock title -%}
+{% block content -%}
+<h1 class="title">
+    {{ page.title }}
+</h1>
+<article>
+    {{ page.content | safe }}
+
+{% set posts = get_taxonomy(kind="tags") %}
+{% set posts_filtered = posts.items | filter (attribute="name", value=page.extra.tag) %}
+
+{# <code>    {{ posts_filtered | json_encode(pretty=true) }}</code> #}
+
+<h3>Latest from the gallery</h3>
+<ul class="gallery flat"></ul>
+
+{% set idx = 0 -%}
+{% for post in posts_filtered[0].pages %}
+{% if post.components is containing ("gallery")  %}
+{% if post.extra.images  -%}
+{% for image in post.extra.images -%}
+
+{% set_global idx = idx + 1 -%}
+{% if idx <= 12 -%}
+
+{# { set image = resize_image(path=post.path ~ image, width=256, height=256, format=config.extra.image_format, quality=config.extra.thumbnail_quality) %} #}
+<li class="thumbnail">
+  <a href="{{ post.permalink | safe }}" title="{{ post.title }} - {{ post.date }}">
+    {{ images::responsive_thumbnail(path=post.colocated_path, src=image, default_size=128, sizes=[128,256], alt=post.title  ~ " - "  ~ post.date ) -}}
+  </a>
+</li>
+{% endif -%}
+{% endfor -%}
+{% endif -%}
+{% endif -%}
+{% endfor -%}
+</ul>
+
+<h3>Latest from the blog</h3>
+<ul class="posts flat">
+    {% set idx = 0 -%}
+    {% set more_content = false -%}
+    {% for post in posts_filtered[0].pages %}
+    {% if post.components is containing ("blog")  %}
+    {% set_global idx = idx + 1 -%}
+    {% if idx <= 6 -%}
+  <li class="post">
+    <div class="post-header">
+      <div class="meta">
+        <div class="date">
+          <span class="day">{{ post.day }}</span>
+          <span class="rest">{{ post.date | date(format='%b') }}</span>
+        </div>
+      </div>
+      <div class="matter">
+        <div class="title small">
+          <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+          {% if post.draft %}<span class="draft">(Draft)</span>{% endif %}
+        </div>
+        {{ hooks::posts_below_title(page=post) }} 
+      </div>
+    </div>
+  </li>
+  {% else %}
+    {% set_global more_content = true -%}
+  {% endif %}
+  {% endif %}
+
+  {% endfor %}
+</ul>
+{% if more_content == true %}
+{% set content_length = posts_filtered[0].pages | length %}
+{{ "[View all " ~ content_length ~ " #" ~ page.extra.tag ~" pages &raquo;](/tags/" ~ page.extra.tag ~ ")" | markdown(inline=true) | safe }}
+
+{% endif %}
+
+
+</article>
+
+
+{% endblock content -%}
