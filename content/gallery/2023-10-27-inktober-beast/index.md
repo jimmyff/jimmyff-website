@@ -5,7 +5,7 @@ draft =  false
 [taxonomies]
 tags = ["inktober", "art"]
 medium = ["digital"]
-series = ["inktober-2023"]
+series = ["inktober-2023", "self-portraits"]
 [extra]
 images= ["beast.webp"]
 +++
@@ -13,3 +13,5 @@ images= ["beast.webp"]
 {{ image(src="beast.webp", alt="Beast") }}
 
 Our little family! 🐾
+
+This is based on a photo of us I snapped at Filey Bay this year. It was Elphie's first visit to a beach and she absolutely loved it! 🏖️

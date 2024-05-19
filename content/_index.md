@@ -5,19 +5,19 @@ template = "index.html"
 in_search_index = true
 +++
 
-Welcome and hello! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an avid gamer and an obsessive creator. Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (checkout [my blog](/blog/)). If you would like to contact me then [send me a message](https://docs.google.com/forms/d/e/1FAIpQLScIN2i8tudYfvWZO96Ed-_ma011PgZU-CrxRyCXdSA1z9NRjA/viewform).
+Welcome and hello! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an avid gamer, an obsessive creator and dog lover. Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (_[see blog](/blog/)_). If you would like to contact me then [send me a message](https://docs.google.com/forms/d/e/1FAIpQLScIN2i8tudYfvWZO96Ed-_ma011PgZU-CrxRyCXdSA1z9NRjA/viewform). This website is first and foremost for me, it serves as a little diary which gives me a bit of record of the stuff I was up to many moons ago!
 
 ---
 
 ## Analogue & digital gaming
 
-I tend to find non-interactive things boring after a short-time, this is perhaps why I consider gaming one of my cornerstones. I love analogue gaming as a way of gathering friends and family around a table and having a great evening. I've dabbled in both [analogue game design](/tags/gamedev-analogue/) and [video game development](/tags/gamedev-digital). I'm a passionate gamer and a self-confessed [Nintendo](/tags/nintendo) fan-boy. I love boardsgames and enjoy RPG's too, feel free to [connect on BoardGameGeek](https://boardgamegeek.com/user/jimmyff).
+Gaming is one of my cornerstones, probably as I find non-interactive activities pretty boring! I love table top gaming as a way of gathering friends and family around a table and having a great joint experience (feel free to [connect on BoardGameGeek](https://boardgamegeek.com/user/jimmyff)). I love to  [design board games](/tags/gamedev-analogue/) and I've dabbled with [video game development](/tags/gamedev-digital) too. I'm a passionate gamer although I don't get much time for video games these days but I remain a die hard [Nintendo](/tags/nintendo) fan-boy.
 
 ---
 
 ## Coding & technology
 
-You can find my public work over on my [Github profile](https://github.com/jimmyff/). I'm always creating something new! My main language is [Dart](/tags/lang-dart), I'm in love with the Flutter framework. I'm also trying to level up my [Rust](/tags/lang-rust) skills. I'm a big fan of serveless technology and my preferred backend is Google Cloud.
+You can find my public projects over on my [Github profile](https://github.com/jimmyff/). I'm always creating something new! My main language is [Dart](/tags/lang-dart), I'm in love with the Flutter framework. I'm also trying to level up my [Rust](/tags/lang-rust) skills. I'm a big fan of serveless technology and my preferred backend is Google Cloud.
 
 ---
 

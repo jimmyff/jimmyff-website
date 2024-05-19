@@ -17,7 +17,7 @@ I've always loved social deduction games like Avalon, love letter, Battlestar Ga
 
 ## Game Settings / Background
 
-_In a daring escape, innocent prisoners slip in to the robes of cultists and join a procession marching out of the castle. They soon realise the cultists are marching to the crypt to resurrect the dark lord. If successful the dark lord will summon an unstoppable army of undead. Can the escapees maintain their disguise for long enough to thwart the resurrection and save humanity from the clutches of impending doom?_
+> _In a daring escape, innocent prisoners slip in to the robes of cultists and join a procession marching out of the castle. They soon realise the cultists are marching to the crypt to resurrect the dark lord. If successful the dark lord will summon an unstoppable army of undead. Can the escapees maintain their disguise for long enough to thwart the resurrection and save humanity from the clutches of impending doom?_
 
 ## The Game
 

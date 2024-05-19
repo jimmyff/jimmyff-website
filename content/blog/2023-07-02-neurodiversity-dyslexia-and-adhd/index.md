@@ -15,7 +15,7 @@ images= []
 
 ---
 
-_Firstly let me just say that writing a blog post about 'me' feels a little self-indulgent. Despite this being my blog, I try not to include details about me or photos of me etc. I keep my socials locked down and try to keep my digital footprint minimal. I'm going to write this as I think we should talk about these things more._
+_Firstly let me just say that writing a blog post about 'me' feels a little self-indulgent. Despite this being my blog, I try not to include details about me or photos of me etc. I keep my socials locked down and try to keep my digital footprint minimal. I'm going to write this as I'd quite like to document how I feel and talking about this stuff is no bad thing._
 
 ---
 
