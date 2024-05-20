@@ -44,10 +44,12 @@ google_analytics_tag_id = 'G-71ZN1D4H6Q'
 keywords = "jimmy, forrester-fellowes, jimmyff, jimmy3ds, yorkshire, leeds, developer"
 avatar = "/avatar_2024.webp"
 
+
 image_resizing_disabled = false
-image_format = "webp"           # "auto", "jpg", "png", "webp"
+image_format = "webp"             # "auto", "jpg", "png", "webp"
 image_quality = 80
 thumbnail_quality = 70
+search_path = "$BASE_URL/search/"
 
 # responsive image shortcode 
 # example: {{ image(src="foo.jpeg", alt="some image") }}
@@ -65,10 +67,13 @@ link_instagram_username = "jimmyff_art"
 disable_powered_by = false
 
 menu_links = [
-    { url = "$BASE_URL/", name = "About", emoji = "🏠" },
+    { url = "$BASE_URL/", name = "Home", emoji = "🏠" },
     { url = "$BASE_URL/blog/", name = "Blog", emoji = "📖" },
     { url = "$BASE_URL/gallery/", name = "Gallery", emoji = "🎨" },
     { url = "$BASE_URL/apps/", name = "Apps", emoji = "📱" },
+    # { url = "$BASE_URL/apps/", name = "Projects", emoji = "💡" },
+    { url = "$BASE_URL/boardgames/", name = "Games", emoji = "🎲" },
     # { url = "$BASE_URL/guestbook/", name = "Guestbook", emoji = "🌍" },
-    { url = "$BASE_URL/search/", name = "Search", emoji = "🔎" },
+    # { url = "$BASE_URL/search/", name = "Search", emoji = "🔎" },
+
 ]

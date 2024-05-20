@@ -5,7 +5,9 @@ template = "index.html"
 in_search_index = true
 +++
 
-Welcome and hello! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an avid gamer, an obsessive creator and dog lover. Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (_[see blog](/blog/)_). If you would like to contact me then [send me a message](https://docs.google.com/forms/d/e/1FAIpQLScIN2i8tudYfvWZO96Ed-_ma011PgZU-CrxRyCXdSA1z9NRjA/viewform). This website is first and foremost for me, it serves as a little diary which gives me a bit of record of the stuff I was up to many moons ago!
+# Welcome! 👋
+
+Hello & welcome! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an avid gamer, an obsessive creator and dog lover. Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (_[see blog](/blog/)_). If you would like to contact me then [send me a message](https://docs.google.com/forms/d/e/1FAIpQLScIN2i8tudYfvWZO96Ed-_ma011PgZU-CrxRyCXdSA1z9NRjA/viewform). This website is first and foremost for me, it serves as a little diary which gives me a bit of record of the stuff I was up to many moons ago!
 
 ---
 
