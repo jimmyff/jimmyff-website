@@ -16,7 +16,7 @@ I created my first game back in the early 2000's and since then I have designed 
 
 ## Recently played games
 
-Here are my most recently played games, powered by [BoardGameGeek](https://boardgamegeek.com/) (checkout my full [profile](https://boardgamegeek.com/user/jimmyff)). Many years ago I made a game result recording app but these days I use the excellent [BG Stats app](https://www.bgstatsapp.com/).
+Here are my most recently played games (feed powered by [BoardGameGeek](https://boardgamegeek.com/) / [my profile](https://boardgamegeek.com/user/jimmyff)). A long time ago I made a pretty cool game score & fun recording app but these days I use the excellent [BG Stats app](https://www.bgstatsapp.com/).
 
 <style>
 .BGGwrapper {
@@ -28,26 +28,36 @@ Here are my most recently played games, powered by [BoardGameGeek](https://board
 }
 .BGGitem {
     height: 90px;
-    width: 310px;
-    display:inline-block;
+    width: 300px;
+    display:flex;
     padding:4px;
+    gap:16px;
+    align-items:center;
+    justify-content:start;
 
     overflow:hidden;
     font-size: 0.9em;
 }
+.BGGitem a:first-child {
+    display:contents;
+}
 .BGGitem img {
-    margin:8px 0;
     height:75px;
     width:75px;
-    margin-right: 16px !important;
+    margin: 0 !important;
+    float:none !important;
 }
 .BGGitem .BGGtitle {
-    line-clamp: 2;
+
+    line-height:1.2em;
 }
 
 .BGGitem .BGGtitle a:last-child {
    font-size:0.8em;
    color:var(--subtle-text);  
+    line-height:1.6em;
+    display:block;
+    margin-top:0.3em;
 }
 .BGGitem .BGGtitle a:last-child::before {
   content: '📅 ';
@@ -56,9 +66,32 @@ Here are my most recently played games, powered by [BoardGameGeek](https://board
 .BGGprovided {
     display:none;
 }
+
+@media ((min-width: 480px) and (max-width: 750px)) {
+    .BGGwrapper {
+        gap: 4px;
+    }
+
+    .BGGitem {
+        width: 40vw;
+    }
+}
+@media (max-width: 480px) {
+
+    .BGGwrapper {
+        gap: 0;
+        flex-direction:column;
+        flex-wrap:nowrap;
+    }
+
+    .BGGitem {
+        width: 100%;
+    }
+}
+
 </style>
 
-<script language="javascript" src="https://boardgamegeek.com/jswidget.php?username=jimmyff&numitems=18&text=title&images=small-fixed&show=recentplays&imagesonly=1&imagepos=left&inline=1&showplaydate=1&domains%5B%5D=boardgame"></script>
+<script language="javascript" src="https://boardgamegeek.com/jswidget.php?username=jimmyff&numitems=12&text=title&images=small-fixed&show=recentplays&imagesonly=1&imagepos=left&inline=1&showplaydate=1&domains%5B%5D=boardgame"></script>
 
 ---
 
