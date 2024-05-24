@@ -67,13 +67,18 @@ link_instagram_username = "jimmyff_art"
 disable_powered_by = false
 
 menu_links = [
-    { url = "$BASE_URL/", name = "Home", emoji = "🏠" },
+    # { url = "$BASE_URL/", name = "Home", emoji = "🏠" },
     { url = "$BASE_URL/blog/", name = "Blog", emoji = "📖" },
     { url = "$BASE_URL/gallery/", name = "Gallery", emoji = "🎨" },
     { url = "$BASE_URL/apps/", name = "Apps", emoji = "📱" },
     # { url = "$BASE_URL/apps/", name = "Projects", emoji = "💡" },
     { url = "$BASE_URL/boardgames/", name = "Games", emoji = "🎲" },
-    # { url = "$BASE_URL/guestbook/", name = "Guestbook", emoji = "🌍" },
     # { url = "$BASE_URL/search/", name = "Search", emoji = "🔎" },
 
+]
+
+overflow_menu_links = [
+    { url = "$BASE_URL/", name = "Home", emoji = "🏠" },
+    { url = "$BASE_URL/guestbook/", name = "Guestbook", emoji = "🌍" },
+    { url = "$BASE_URL/search/", name = "Search", emoji = "🔎" },
 ]

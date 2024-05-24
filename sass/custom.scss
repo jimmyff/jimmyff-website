@@ -37,20 +37,19 @@ img[src$='#pixelate'] {
 
 
 
-@media (max-width: 550px) {
+@media (max-width: 800px) {
     header .links {
-        gap: 3vw;
 
-        a {
+
+        >a {
             flex: 1;
             text-align: center;
             margin: 0;
-            border: 1px solid var(--black);
             border-radius: 0.2em;
-
-            display: block;
-            padding: 3vw;
             text-decoration: none;
+
+            display: flex;
+            flex-direction: column;
 
             &.active {
                 border-color: var(--light-grey);
@@ -59,15 +58,25 @@ img[src$='#pixelate'] {
 
             span.emoji {
                 text-align: center;
-                font-size: 6vw;
+                font-size: 1.2em;
+                line-height: 1.4em;
                 padding: 0;
+                margin: 0;
             }
 
-            span.name {
-                display: none;
+            .name {
+                font-size: 0.9em;
+                line-height: 1.6em;
             }
         }
+
     }
+
+
+
+    // header>nav>.link>a>span.name {
+    //     display: none;
+    // }
 }
 
 
@@ -126,5 +135,50 @@ img.framed {
     img.framed {
         box-sizing: border-box;
         border: 0.5rem solid white;
+    }
+}
+
+@media (max-width: 400px) {
+
+    header .links {
+        gap: 0.25em;
+
+        >a {
+            padding: 0.5em 0;
+            border: 1px solid var(--black);
+
+            >.name {
+                display: none;
+            }
+
+            &.active {
+                border-color: var(--light-grey);
+            }
+        }
+    }
+
+}
+
+
+header .links a {
+
+    span.name {
+        text-decoration: none;
+    }
+
+    &:hover {
+
+        span.name {
+            text-decoration: underline;
+        }
+    }
+
+    &.active {
+
+        span.name {
+            text-decoration: none !important;
+            color: var(--heading-color);
+
+        }
     }
 }
