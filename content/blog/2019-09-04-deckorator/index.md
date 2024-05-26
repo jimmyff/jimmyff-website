@@ -4,6 +4,7 @@ date= 2019-09-04
 draft= false
 [taxonomies]
 tags= ["coding", "gamedev-analogue", "project-gametools"]
+project = ["Game Tools"]
 +++
 
 _Update: To view a couple of the games I've made with this package see: [Yoga card game](/blog/yoga-game/) & [Eurovision card game](/blog/eurovision-game-2-the-card-game)_

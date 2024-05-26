@@ -4,7 +4,7 @@ date = 2019-01-30
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["ceramic"]
+medium = ["Ceramic"]
 series = []
 [extra]
 images= ["done.webp"]

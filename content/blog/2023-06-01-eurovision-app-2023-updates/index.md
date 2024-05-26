@@ -6,6 +6,7 @@ draft =  true
 tags = ["eurovision", "project-eurovision-app", "coding"]
 medium = []
 series = []
+project = ["ESC App"]
 [extra]
 images= []
 +++

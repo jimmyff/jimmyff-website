@@ -4,7 +4,7 @@ date = 2023-02-08
 draft =  false
 [taxonomies]
 tags = ["art", "portrait"]
-medium = ["oil"]
+medium = ["Oil"]
 series = []
 [extra]
 images= ["mum.webp"]

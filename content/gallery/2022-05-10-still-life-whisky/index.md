@@ -4,7 +4,7 @@ date = 2022-05-10
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["oil"]
+medium = ["Oil"]
 [extra]
 images= ["whisky.webp"]
 +++

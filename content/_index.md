@@ -1,5 +1,5 @@
 +++
-title = "About"
+title = "Welcome"
 images = []
 template = "index.html"
 in_search_index = true

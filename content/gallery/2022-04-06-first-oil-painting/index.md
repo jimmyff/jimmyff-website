@@ -4,7 +4,7 @@ date = 2022-04-06
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["oil"]
+medium = ["Oil"]
 [extra]
 images= ["first_oil_painting.webp"]
 hide_from_section = true

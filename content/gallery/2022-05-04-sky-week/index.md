@@ -4,7 +4,7 @@ date = 2022-05-04
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["oil"]
+medium = ["Oil"]
 [extra]
 images= ["sky.webp"]
 hide_from_section = true

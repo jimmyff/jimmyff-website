@@ -4,6 +4,7 @@ date= 2021-12-23
 draft= false
 [taxonomies]
 tags= ["coding", "eurovision"]
+project = ["ESC App"]
 +++
 
 (I also published this article over at [Medium](https://medium.com/@jimmyff/google-play-banned-my-highly-rated-app-with-no-real-justification-827e734df748))

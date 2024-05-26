@@ -4,7 +4,7 @@ date = 2022-05-17
 draft =  false
 [taxonomies]
 tags = ["art", "nintendo"]
-medium = ["oil"]
+medium = ["Oil"]
 [extra]
 images= ["wiiu.webp"]
 +++

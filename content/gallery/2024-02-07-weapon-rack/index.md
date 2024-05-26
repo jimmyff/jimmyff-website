@@ -3,9 +3,10 @@ title = "Weapon Rack"
 date = 2024-02-07
 draft =  false
 [taxonomies]
-tags = ["art", "project-quest", "gamedev-art", "gamedev-analogue"]
-medium = ["digital"]
-series = ["project-quest"]
+tags = ["art",  "gamedev-art", "gamedev-analogue"]
+medium = ["Digital"]
+series = ["Ultimate Quest Treasure"]
+project = ["Quest"]
 [extra]
 images= ["weapon-rack.webp"]
 +++

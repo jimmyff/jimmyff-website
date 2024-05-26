@@ -4,6 +4,7 @@ date= 2021-07-22
 draft= false
 [taxonomies]
 tags= ["coding", "lang-dart"]
+project = ["Crypto Clock"]
 +++
 
 {{ image(src="crypto-clock.webp", alt="Photo of the cyrpto-clock") }}

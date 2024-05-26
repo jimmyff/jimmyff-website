@@ -4,7 +4,7 @@ date = 2020-09-30
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["digital"]
+medium = ["Digital"]
 series = []
 [extra]
 images= ["tissues.webp"]

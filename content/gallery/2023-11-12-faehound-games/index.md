@@ -4,7 +4,7 @@ date = 2023-11-12
 draft =  false
 [taxonomies]
 tags = ["art", "animation", "gamedev-art", "gamedev-analogue"]
-medium = ["digital"]
+medium = ["Digital"]
 series = []
 [extra]
 images= ["faehound-games.gif"]

@@ -3,9 +3,10 @@ title = "Tarnhelm Sutton Hoo"
 date = 2023-12-18
 draft =  false
 [taxonomies]
-tags = ["art", "project-quest", "gamedev-art", "gamedev-analogue"]
-medium = ["digital"]
-series = ["project-quest"]
+tags = ["art", "gamedev-art", "gamedev-analogue"]
+medium = ["Digital"]
+project = ["Quest"]
+series = ["Ultimate Quest Treasure"]
 [extra]
 images= ["tarnhelm.webp"]
 +++

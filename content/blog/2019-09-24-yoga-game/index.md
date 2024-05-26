@@ -4,6 +4,7 @@ date= 2019-09-24
 draft= false
 [taxonomies]
 tags= ["coding", "gamedev-analogue"]
+project = ["Mice Yogis"]
 +++
 
 > You are the residents of Pickledale village hall. Living under the floorboards you are treated to a highly diverse activity schedule provided by the over-floor frequenters. Poppy calls everyone together “It’s 5pm Monday which means it’s...”, “Yoga night!” Emanuel exclaims excitedly. “That’s right” Poppy continues, “Everyone, get your leaf mats rolled out, there are cheese support blocks if you need them, have fun and remember ...don’t overstretch!”.

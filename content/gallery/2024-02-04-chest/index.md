@@ -3,9 +3,10 @@ title = "Dungeon chest"
 date = 2024-02-04
 draft =  false
 [taxonomies]
-tags = ["art", "project-quest", "gamedev-art", "gamedev-analogue"]
-medium = ["digital"]
-series = ["project-quest"]
+tags = ["art", "gamedev-art", "gamedev-analogue"]
+medium = ["Digital"]
+project = ["Quest"]
+series = ["Ultimate Quest Treasure"]
 [extra]
 images= ["chest.webp"]
 +++

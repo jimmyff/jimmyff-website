@@ -4,7 +4,7 @@ date = 2021-10-08
 draft =  false
 [taxonomies]
 tags = ["inktober", "art", "portrait", "neil"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["inktober-2021", "neil"]
 [extra]
 images= ["watch.webp"]

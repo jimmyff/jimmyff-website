@@ -3,9 +3,9 @@ title = "Pure and corrupt hearts"
 date = 2024-03-20
 draft =  false
 [taxonomies]
-tags = ["art", "project-traitor", "gamedev-art", "gamedev-analogue"]
-medium = ["digital"]
-series = ["project-traitor"]
+tags = ["art", "gamedev-art", "gamedev-analogue"]
+medium = ["Digital"]
+project = ["Traitor"]
 [extra]
 images= ["hearts.webp"]
 +++

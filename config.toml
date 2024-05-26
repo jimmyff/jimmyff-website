@@ -24,10 +24,11 @@ theme = "zola-inky"
 #     ]
 #
 taxonomies = [
-    { name = "tags", lang = "en", rss = true },
-    { name = "medium", lang = "en", rss = true },
-    { name = "series", lang = "en", rss = true },
-    { name = "projects", lang = "en", rss = true },
+    { name = "tags", feed = true },
+    { name = "medium", feed = true },
+    { name = "series", feed = true },
+    { name = "project", feed = true },
+    # , render = false
 ]
 
 [markdown]
@@ -40,6 +41,7 @@ highlight_code = true
 
 # Put all your custom variables here
 google_analytics_tag_id = 'G-71ZN1D4H6Q'
+title_suffix = "a creative & geeky personal blog"
 
 keywords = "jimmy, forrester-fellowes, jimmyff, jimmy3ds, yorkshire, leeds, developer"
 avatar = "/avatar_2024.webp"
@@ -70,8 +72,8 @@ menu_links = [
     # { url = "$BASE_URL/", name = "Home", emoji = "🏠" },
     { url = "$BASE_URL/blog/", name = "Blog", emoji = "📖" },
     { url = "$BASE_URL/gallery/", name = "Gallery", emoji = "🎨" },
-    { url = "$BASE_URL/apps/", name = "Apps", emoji = "📱" },
-    # { url = "$BASE_URL/apps/", name = "Projects", emoji = "💡" },
+    # { url = "$BASE_URL/apps/", name = "Apps", emoji = "📱" },
+    { url = "$BASE_URL/projects/", name = "Projects", emoji = "💡" },
     { url = "$BASE_URL/boardgames/", name = "Games", emoji = "🎲" },
     # { url = "$BASE_URL/search/", name = "Search", emoji = "🔎" },
 
@@ -80,5 +82,9 @@ menu_links = [
 overflow_menu_links = [
     { url = "$BASE_URL/", name = "Home", emoji = "🏠" },
     { url = "$BASE_URL/guestbook/", name = "Guestbook", emoji = "🌍" },
+    { url = "$BASE_URL/inktober/", name = "Inktober", emoji = "🎨" },
     { url = "$BASE_URL/search/", name = "Search", emoji = "🔎" },
 ]
+
+emoji_blog = "📝"
+emoji_gallery = "🎨"

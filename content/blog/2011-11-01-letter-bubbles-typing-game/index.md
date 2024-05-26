@@ -4,7 +4,7 @@ date= 2011-11-01
 draft= false
 [taxonomies]
 tags= ["coding", "gamedev-digital","lang-javascript"]
-projects= ["letter-bubbles"]
+project= ["letter-bubbles"]
 +++
 
 Back in 1999 I wrote a frantic arcade style touch typing game in Visual Basic (ew!). Someone reminded me of the game and I decided to recreate the game using modern web technologies such as HTML5 Canvas & Audio elements. I stayed as true to the original as I could and pleased that I managed to port the game almost identically. Check the youtube vid below to see the game being played on insane difficulty.

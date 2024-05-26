@@ -4,6 +4,7 @@ date= 2021-07-16
 draft= false
 [taxonomies]
 tags= ["coding", "gamedev-digital", "lang-lua"]
+project = ["Playdate"]
 +++
 
 I've been stewing on how I could fill the asteroids to make my [space game](/tags/space_game/) look better. It's a tricky problem as I only know terrain lines and nothing else (so I don't know which side is supposed to be solid and which is supposed to be the empty void of space). This shows what I have and what I want to achieve:

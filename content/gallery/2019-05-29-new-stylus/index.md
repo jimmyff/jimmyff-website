@@ -4,7 +4,7 @@ date = 2019-05-29
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["digital"]
+medium = ["Digital"]
 series = []
 [extra]
 images= ["bed_sketch.webp", "loo_sketch.webp"]

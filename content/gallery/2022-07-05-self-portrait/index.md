@@ -6,7 +6,7 @@ draft =  false
 images= ["jimmy.webp"]
 [taxonomies]
 tags = ["art", "portrait"]
-medium = ["oil"]
+medium = ["Oil"]
 series = ["self-portraits"]
 +++
 

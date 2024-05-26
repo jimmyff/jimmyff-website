@@ -4,7 +4,7 @@ date = 2019-06-19
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["sketch-a-day"]
 [extra]
 images= ["sport.webp"]

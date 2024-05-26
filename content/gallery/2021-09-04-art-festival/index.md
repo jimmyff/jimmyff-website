@@ -4,7 +4,7 @@ date = 2021-09-04
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["digital"]
+medium = ["Digital"]
 series = []
 [extra]
 images= ["festival.webp"]

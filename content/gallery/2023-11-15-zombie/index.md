@@ -3,9 +3,10 @@ title = "Zombie"
 date = 2023-11-15
 draft =  false
 [taxonomies]
-tags = ["art", "project-quest", "gamedev-art", "gamedev-analogue"]
-medium = ["digital"]
-series = ["project-quest"]
+tags = ["art", "gamedev-art", "gamedev-analogue"]
+medium = ["Digital"]
+series = ["Ultimate Quest Monsters"]
+project = ["Quest"]
 [extra]
 images= ["zombie.webp"]
 +++

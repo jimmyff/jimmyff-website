@@ -3,9 +3,10 @@ title = "Ultimate Quest - The first public playtest!"
 date = 2024-03-18
 draft =  false
 [taxonomies]
-tags = ["project-quest", "gamedev-analogue", "ultimate-quest"]
+tags = ["gamedev-analogue", "ultimate-quest"]
 medium = []
-series = ["project-quest"]
+series = []
+project = ["Quest"]
 [extra]
 images= ["1.webp"]
 +++

@@ -4,7 +4,7 @@ date = 2023-01-13
 draft =  false
 [taxonomies]
 tags = ["art", "nintendo", "lego"]
-medium = []
+medium = ["Lego"]
 series = []
 [extra]
 images= ["kirby.webp"]

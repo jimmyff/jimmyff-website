@@ -4,7 +4,7 @@ date = 2020-12-20
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["christmas"]
 [extra]
 images= ["santa.webp"]

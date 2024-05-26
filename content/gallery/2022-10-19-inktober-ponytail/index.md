@@ -4,7 +4,7 @@ date = 2022-10-19
 draft =  false
 [taxonomies]
 tags = ["inktober", "art"]
-medium = ["oil"]
+medium = ["Oil"]
 series = ["inktober-2022"]
 [extra]
 images= ["ponytail_table.webp"]

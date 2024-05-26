@@ -4,7 +4,7 @@ date = 2022-05-22
 draft =  false
 [taxonomies]
 tags = ["art", "dog", "neil"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["neil"]
 [extra]
 images= ["happy_birthday_neil.webp"]

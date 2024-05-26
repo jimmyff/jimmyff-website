@@ -3,9 +3,10 @@ title = "Old Mother Root"
 date = 2024-01-04
 draft =  false
 [taxonomies]
-tags = ["art", "project-quest", "gamedev-art", "gamedev-analogue"]
-medium = ["digital"]
-series = ["project-quest"]
+tags = ["art", "gamedev-art", "gamedev-analogue"]
+medium = ["Digital"]
+project = ["Quest"]
+series = ["Ultimate Quest Art"]
 [extra]
 images= ["mother-root.webp"]
 +++

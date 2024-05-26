@@ -4,7 +4,7 @@ date = 2023-10-27
 draft =  false
 [taxonomies]
 tags = ["inktober", "art"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["inktober-2023", "self-portraits"]
 [extra]
 images= ["beast.webp"]

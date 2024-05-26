@@ -4,7 +4,7 @@ date = 2022-11-01
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["oil"]
+medium = ["Oil"]
 series = ["still-here-still-life"]
 [extra]
  images= ["week92.webp"]

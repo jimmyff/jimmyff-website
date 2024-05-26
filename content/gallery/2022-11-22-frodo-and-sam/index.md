@@ -4,7 +4,7 @@ date = 2022-11-15
 draft =  false
 [taxonomies]
 tags = ["art", "portrait"]
-medium = ["oil"]
+medium = ["Oil"]
 series = []
 [extra]
 images= ["frodo-and-sam.webp"]

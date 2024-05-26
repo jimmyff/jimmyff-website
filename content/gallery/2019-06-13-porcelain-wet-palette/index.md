@@ -4,7 +4,7 @@ date = 2019-09-13
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["ceramic"]
+medium = ["Ceramic"]
 series = []
 [extra]
 images= ["porcelain_wet_palette.webp"]

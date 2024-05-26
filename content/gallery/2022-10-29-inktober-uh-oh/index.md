@@ -4,7 +4,7 @@ date = 2022-10-29
 draft =  false
 [taxonomies]
 tags = ["inktober", "art", "dog"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["inktober-2022"]
 [extra]
 images= ["uh-oh.webp"]

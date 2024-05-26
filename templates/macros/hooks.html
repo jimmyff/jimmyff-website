@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% import "macros/projects.html" as projects -%}
+{% import "macros/taxonomies.html" as taxonomies -%}
 
 {% macro inline_links(slugs, prefix, joiningWord) %}{% for slug in slugs %}{% if loop.last and loop.index0 > 0 %} {{ joiningWord }} {% endif %}<a href="{{ prefix }}{{ slug }}">{{ slug | capitalize }}</a>{% if not loop.last %},{% endif %}{% endfor %}{% endmacro inline_links %}
 
@@ -15,11 +17,45 @@
 
 {# Page hooks #}
 {% macro post_above_content(page) -%}
-    {% if page.taxonomies["projects"] or page.taxonomies["series"] or page.taxonomies["medium"] -%}
-    <p><em>
-      {% if page.taxonomies["projects"] %}Part of the {{ hooks::inline_links(slugs=page.taxonomies["projects"],prefix='/projects/', joiningWord="and") }} project.{% endif -%}
-      {% if page.taxonomies["series"] %}Part of the {{ hooks::inline_links(slugs=page.taxonomies["series"],prefix='/series/', joiningWord="and") }} series.{% endif -%}
-      {% if page.taxonomies["medium"] %}Medium: {{ hooks::inline_links(slugs=page.taxonomies["medium"],prefix='/medium/', joiningWord="and") }}.{% endif -%}
+
+
+    {% if page.taxonomies["project"] or page.taxonomies["series"] or page.taxonomies["medium"] -%}
+    
+    <p><em>  
+      {# PROJECTS #}
+      {% if page.taxonomies["project"] %}
+      Part of the 
+      {% for project in page.taxonomies["project"] | sort -%}
+      {%- if loop.index > 1 -%}
+      {%- if loop.last %} and {% else -%},{% endif %}
+      {% endif %}
+      <a href="{{ projects::url(name=project) }}">{{ project }}</a>      
+      {% endfor -%}
+       project{% if page.taxonomies["project"]|length >1 %}s{% endif %}.
+      {% endif -%}
+      {# SERIES #}
+      {% if page.taxonomies["series"] %}
+      Part of the 
+      {% for series in page.taxonomies["series"] | sort -%}
+      {%- if loop.index > 1 -%}
+      {%- if loop.last %} and {% else -%},{% endif %}
+      {% endif %}
+      <a href="{{ taxonomies::url(taxonomy='series', term=series) }}">{{ series }}</a>      
+      {% endfor -%}
+       series{% if page.taxonomies["series"]|length >1 %}'{% endif %}.
+      {% endif -%}
+
+      {# SERIES #}
+      {% if page.taxonomies["medium"] %}
+      Medium: 
+      {% for medium in page.taxonomies["medium"] | sort -%}
+      {%- if loop.index > 1 -%}
+      {%- if loop.last %} and {% else -%},{% endif %}
+      {% endif %}
+      <a href="{{ taxonomies::url(taxonomy='medium', term=medium) }}">{{ medium }}</a>      
+      {%- endfor -%}.
+      {% endif -%}
+
     </em></p>
     {% endif -%}
 {% endmacro post_above_content -%}

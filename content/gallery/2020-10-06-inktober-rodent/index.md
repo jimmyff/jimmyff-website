@@ -4,7 +4,7 @@ date = 2020-10-06
 draft =  false
 [taxonomies]
 tags = ["inktober", "art", "nintendo"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["inktober-2020"]
 [extra]
 images= ["rodent.webp"]

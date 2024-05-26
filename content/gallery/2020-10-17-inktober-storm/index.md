@@ -4,7 +4,7 @@ date = 2020-10-17
 draft =  false
 [taxonomies]
 tags = ["inktober", "eurovision", "art"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["inktober-2020"]
 [extra]
 images= ["storm.webp"]

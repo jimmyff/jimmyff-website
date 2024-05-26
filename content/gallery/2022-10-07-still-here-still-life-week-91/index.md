@@ -4,7 +4,7 @@ date = 2022-10-07
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["still-here-still-life"]
 [extra]
  images= ["week91.webp"]

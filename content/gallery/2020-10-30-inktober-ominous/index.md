@@ -4,7 +4,7 @@ date = 2020-10-30
 draft =  false
 [taxonomies]
 tags = ["inktober", "art", "portrait"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["inktober-2020", "self-portraits"]
 [extra]
 images= ["ominous.webp"]

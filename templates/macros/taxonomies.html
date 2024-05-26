@@ -26,3 +26,13 @@
 
 
 {% endmacro values_for_pages %}
+
+
+{% macro url(taxonomy, term) -%}
+{% set taxonomies = get_taxonomy(kind=taxonomy) -%}
+{% for tax in taxonomies.items | filter(attribute="name", value=term) -%}
+{{tax.permalink }}
+{% endfor -%}
+{% endmacro url %}
+
+

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% import "macros/images.html" as images -%}
+{% import "macros/taxonomies.html" as taxonomies -%}
+{% import "macros/projects.html" as projects -%}
+
+{% block content -%}
+<h1 class="title">
+    {{ section.title }}
+</h1>
+<article>
+    {{ section.content | safe }}
+
+{% set projects = get_taxonomy(kind="project")  %}
+{# {% set posts_filtered = posts.items | filter (attribute="name", value=page.extra.tag) %} #}
+
+
+
+<hr />
+
+<section class="list">
+
+{% for project in projects.items | sort(attribute="pages.0.date") | reverse %}
+
+{%- set page_exists = load_data(path="projects/"~project.slug~".md", required=false) -%}
+{% if page_exists %}
+{% set page = get_page(path="projects/"~project.slug~".md") %}
+{# <code>{{ page | json_encode(pretty=true) }}</code> #}
+{% endif %}
+
+{{ projects::summary(name=project.name) }}
+
+{% endfor -%}
+</section>
+
+
+<code>{{ projects | json_encode(pretty=true) }}</code>
+
+{% endblock content %}

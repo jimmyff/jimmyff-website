@@ -3,9 +3,10 @@ title = "Potions"
 date = 2024-03-10
 draft =  false
 [taxonomies]
-tags = ["art", "project-quest", "gamedev-art", "gamedev-analogue"]
-medium = ["digital"]
-series = ["project-quest"]
+tags = ["art", "gamedev-art", "gamedev-analogue"]
+medium = ["Digital"]
+series = ["Ultimate Quest Art"]
+project = ["Quest"]
 [extra]
 images= ["potions.webp"]
 +++

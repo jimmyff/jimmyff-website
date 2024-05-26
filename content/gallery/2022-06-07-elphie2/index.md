@@ -4,7 +4,7 @@ date = 2022-06-07
 draft =  false
 [taxonomies]
 tags = ["art", "dog"]
-medium = ["oil"]
+medium = ["Oil"]
 [extra]
 images= ["elphie_main.webp"]
 +++

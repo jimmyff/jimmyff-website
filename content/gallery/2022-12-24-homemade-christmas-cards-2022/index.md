@@ -4,7 +4,7 @@ date = 2022-12-24
 draft =  false
 [taxonomies]
 tags = ["art"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["christmas"]
 [extra]
 images= ["card1.webp"]

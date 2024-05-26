@@ -3,9 +3,10 @@ title = "Fake cultists... A game of social deduction"
 date = 2024-04-05
 draft =  false
 [taxonomies]
-tags = ["project-traitor", "gamedev-analogue"]
+tags = ["gamedev-analogue"]
 medium = []
-series = ["project-traitor"]
+series = []
+project = ["Traitor"]
 [extra]
 images= ["cards1.webp"]
 # {{ image(path="@", src="/gallery/2024-03-20-hearts/hearts.webp", alt="Hearts", class="small") }}

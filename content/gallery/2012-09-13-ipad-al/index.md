@@ -4,7 +4,7 @@ date = 2012-09-03
 draft =  false
 [taxonomies]
 tags = ["art", "portrait"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["ipad-finger-paintings"]
 [extra]
 images= ["alice.webp"]

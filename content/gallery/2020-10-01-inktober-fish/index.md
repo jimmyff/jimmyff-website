@@ -4,7 +4,7 @@ date = 2020-10-01
 draft =  false
 [extra]
 images= ["fish.webp"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["inktober-2020"]
 [taxonomies]
 tags = ["inktober", "art"]

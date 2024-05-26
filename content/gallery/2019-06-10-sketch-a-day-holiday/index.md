@@ -4,7 +4,7 @@ date = 2019-06-10
 draft =  false
 [taxonomies]
 tags = ["art", "portrait", "neil"]
-medium = ["digital"]
+medium = ["Digital"]
 series = ["neil","sketch-a-day"]
 [extra]
 images= ["holiday.webp"]

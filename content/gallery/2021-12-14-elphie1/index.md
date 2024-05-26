@@ -4,7 +4,7 @@ date = 2021-12-14
 draft =  false
 [taxonomies]
 tags = ["art", "dog"]
-medium = ["digital"]
+medium = ["Digital"]
 [extra]
 images= ["elphie.webp"]
 +++

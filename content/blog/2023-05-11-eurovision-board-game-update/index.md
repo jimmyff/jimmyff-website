@@ -6,6 +6,7 @@ draft =  true
 tags = ["eurovision", "gamedev-analogue"]
 medium = []
 series = []
+project = ["ESC Game"]
 [extra]
 images= []
 +++
