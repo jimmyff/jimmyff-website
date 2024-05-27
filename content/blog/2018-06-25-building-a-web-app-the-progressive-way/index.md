@@ -4,7 +4,7 @@ date= 2018-06-25
 draft= false
 [taxonomies]
 tags= ["coding", "lang-dart", "web", "eurovision"]
-project = ["ESC App"]
+project = ["Eurovision App"]
 +++
 
 __And finding an unconventional solution to a challenging objective__

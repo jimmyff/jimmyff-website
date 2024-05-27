@@ -3,7 +3,7 @@ title = "Faehound Games"
 date = 2023-11-12
 draft =  false
 [taxonomies]
-tags = ["art", "animation", "gamedev-art", "gamedev-analogue"]
+tags = ["art", "animation", "gamedev-art", "tabletop-game-design"]
 medium = ["Digital"]
 series = []
 [extra]

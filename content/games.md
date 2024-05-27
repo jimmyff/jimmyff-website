@@ -1,12 +1,14 @@
 +++
-title = "Boardgames & Tabletop gaming"
+title = "Analogue Gaming"
 images = []
 template = "page_with_tag.html"
 in_search_index = true
 [extra]
 section_path = "blog/_index.md"
-tag = "gamedev-analogue" 
+tag = "tabletop-game-design" 
 +++
+
+(_This page is dedicated to analogue gaming, see here for: [video games dev](/tags/gamedev-digital/) & [nintendo](/tags/nintendo/)_)
 
 I love both playing and creating games. Designing them uses similar problem solving skills to that of my software engineering background. Creating the game artworks and designing the components provides a great outlet for my creativity.
 
@@ -95,6 +97,6 @@ Here are my most recently played games (feed powered by [BoardGameGeek](https://
 
 ---
 
-## My game design
+## ✂️ Creating games
 
 I've made a number of games now, each one has something I felt would be interesting to explore. I also love the creative aspect of designing games. I've not published any of my games yet as I've not felt strongly enough about them ...but that might change with my recent projects!

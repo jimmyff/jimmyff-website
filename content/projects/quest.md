@@ -4,12 +4,13 @@ description = "I'm creating my ultimate dungeon crawl game! I want something tha
 date = 2023-10-01
 draft =  false
 [taxonomies]
-tags = ["tabletop-gaming", "gamedev-analogue"]
+tags = ["tabletop-gaming", "tabletop-game-design"]
 medium = []
 series = []
 [extra]
 cover = "/gallery/2024-02-15-ultimate-quest/ultimate-quest.webp"
 images= []
+emoji ="🧙‍♂️"
 created = 2011-05-13
 +++
 

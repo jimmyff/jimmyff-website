@@ -13,6 +13,20 @@
 {% endif %}
 {% endmacro url %}
 
+{% macro html_link(name) -%}
+
+{% set project = get_taxonomy_term(kind="project", term=name)  %}
+{% set page_exists = load_data(path="projects/"~project.slug~".md", required=false) -%}
+{% if page_exists %}
+{% set_global page = get_page(path="projects/"~project.slug~".md") %}
+{% set_global url = page.permalink %}
+{% else %}
+{% set_global url = project.permalink %}
+{% endif %}
+
+<a href="{{ url }}">{% if page and page.extra and page.extra.emoji %}{{ page.extra.emoji }}{% else %}💡{% endif %} {{ project.name }}</a>  
+{% endmacro html_link %}
+
 
 
 {% macro summary(name, onpage=false) -%}
@@ -25,6 +39,12 @@
 {# <code>{{ page | json_encode(pretty=true) }}</code> #}
 {% endif %}
 
+{%- if page and page.extra and page.extra.emoji -%}
+{% set_global emoji = page.extra.emoji -%}
+{%- else -%}
+{% set_global emoji = "💡" -%}
+{%- endif -%}
+
 <div class="project">
     {# <code>{{ project | json_encode(pretty=true) }}</code> #}
 
@@ -36,9 +56,9 @@
 
         <h1>
             {% if page and page.permalink  -%}
-            Project {{ project.name }}
+            {{ emoji }} Project {{ project.name }}
             {% else -%}
-            Project {{ project.name }}
+            {{ emoji }} Project {{ project.name }}
             {% endif -%}
         
         </h1>
@@ -46,9 +66,9 @@
 
         <h3>
             {% if page and page.permalink  -%}
-            <a href="{{ page.permalink | safe }}">Project {{ project.name }}</a>
+            <a href="{{ page.permalink | safe }}">{{ emoji }} Project {{ project.name }}</a>
             {% else -%}
-            <a href="{{ project.permalink | safe }}">Project {{ project.name }}</a>
+            <a href="{{ project.permalink | safe }}">{{ emoji }} Project {{ project.name }}</a>
             {% endif -%}
         
         </h3>
@@ -61,7 +81,9 @@
                     {% if page and page.extra and page.extra.cover -%}
                         {{ images::responsive_image(path="@", src=page.extra.cover, alt=project.name, default_size=config.extra.images_default_size, sizes=config.extra.images_sizes) }}
                     {% else -%}
-                        <span class="emoji">💡</span>
+                        <span class="emoji">
+                            {{ emoji }}
+                        </span>
                     {% endif -%}
                 </div>
         
@@ -71,7 +93,7 @@
                 {% if page_exists and page.description %}
                 <p>{{ page.description }}</p>
                 {% endif -%}
-        
+
         
                 {# {{ taxonomies::values_for_pages(taxonmy=project, pages=project.items, label="") }} #}
                 <div class="stats">
@@ -88,11 +110,32 @@
                 <div class="date">Updated: <span>{{ project.pages.0.date | date(format="%-d %B %Y") }}</span></div> 
                 {% endif -%} #}
         
-                <div class="date">Updated: <span>{{ project.pages.0.date | date(format="%B %Y") }}</span></div> 
-             
+                    <div class="date">Updated: <span>{{ project.pages.0.date | date(format="%B %Y") }}</span></div> 
                 
-                </div>
+                    
+                    </div>
         
+                {# Apps #}
+                {% if onpage %}
+                {% if page_exists and page.extra and page.extra.apps %}
+
+                {% for app in page.extra.apps %}
+                <ul class="app list-inline">
+                    <li class="label">
+                        {{ images::responsive_image(path="@", src=app.icon, alt=app.name, default_size=128, sizes=[128,256,512], class="icon-with-text") }}
+                        {{app.name}} (App)
+                    </li>
+                    <li class="small">📱 <a href="{{ app.google }}">Google Play</a></li>
+                    <li class="small">📱 <a href="{{ app.apple }}">Apple App Store</a></li>
+                    {% if app.website %}
+                    <li  class="small">🌍 <a href="{{ app.website }}">Website</a></li>
+                    {% endif -%}
+                </ul>
+                {% endfor -%}
+                {% endif -%}
+                {% endif -%}
+                
+                {# Tags #}
                 {% if page and page.taxonomies and page.taxonomies["tags"] -%}
                 <ul class="tags">
                     {% for tag in page.taxonomies["tags"] %}

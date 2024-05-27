@@ -3,7 +3,7 @@ title = "Elphie"
 date = 2021-12-14
 draft =  false
 [taxonomies]
-tags = ["art", "dog"]
+tags = ["art", "dog", "elphaba"]
 medium = ["Digital"]
 [extra]
 images= ["elphie.webp"]

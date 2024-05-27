@@ -3,7 +3,7 @@ title = "Fake cultists... A game of social deduction"
 date = 2024-04-05
 draft =  false
 [taxonomies]
-tags = ["gamedev-analogue"]
+tags = ["tabletop-game-design"]
 medium = []
 series = []
 project = ["Traitor"]

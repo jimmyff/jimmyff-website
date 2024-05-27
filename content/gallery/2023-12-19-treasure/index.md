@@ -3,7 +3,7 @@ title = "Treasure!"
 date = 2023-12-19
 draft =  false
 [taxonomies]
-tags = ["art", "gamedev-art", "gamedev-analogue"]
+tags = ["art", "gamedev-art", "tabletop-game-design"]
 medium = ["Digital"]
 project = ["Quest"]
 series = ["Ultimate Quest Treasure"]

@@ -3,7 +3,7 @@ title = "Weapon Rack"
 date = 2024-02-07
 draft =  false
 [taxonomies]
-tags = ["art",  "gamedev-art", "gamedev-analogue"]
+tags = ["art",  "gamedev-art", "tabletop-game-design"]
 medium = ["Digital"]
 series = ["Ultimate Quest Treasure"]
 project = ["Quest"]

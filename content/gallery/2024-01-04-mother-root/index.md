@@ -3,7 +3,7 @@ title = "Old Mother Root"
 date = 2024-01-04
 draft =  false
 [taxonomies]
-tags = ["art", "gamedev-art", "gamedev-analogue"]
+tags = ["art", "gamedev-art", "tabletop-game-design"]
 medium = ["Digital"]
 project = ["Quest"]
 series = ["Ultimate Quest Art"]

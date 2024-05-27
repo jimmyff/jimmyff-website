@@ -3,8 +3,8 @@ title= "Eurovision game 2.0 - The card game!"
 date= 2020-12-21
 draft= false
 [taxonomies]
-tags= ["eurovision", "gamedev-analogue"]
-project= ["ESC Game"]
+tags= ["eurovision", "tabletop-game-design"]
+project= ["Love Love Peace Peace"]
 +++
 
 My previous Eurovision game took around two of prototyping countless versions and lots and lots of playtesting but I never felt I was tottally satisfied with it. About 6 weeks ago I started working on a tottally new reminaged game and today I've finally finished creating the first proper protoytpe complete with artwork. Read on to here about how it plays!

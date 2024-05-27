@@ -4,7 +4,7 @@ date= 2012-05-04
 draft= false
 [taxonomies]
 tags= ["coding", "gamedev-digital", "lang-javascript"]
-project= ["letter-bubbles"]
+project= ["Letter Bubbles"]
 +++
 
 {{ image(src="bbc-click-letter-bubbles2.webp", alt="BBC Click featuring Letter Bubbles") }}

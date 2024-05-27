@@ -3,7 +3,7 @@ title = "Prisoner"
 date = 2024-01-31
 draft =  false
 [taxonomies]
-tags = ["art", "gamedev-art", "gamedev-analogue"]
+tags = ["art", "gamedev-art", "tabletop-game-design"]
 medium = ["Digital"]
 series = ["Ultimate Quest Encounters"]
 project = ["Quest"]

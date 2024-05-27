@@ -3,9 +3,9 @@ title = "Homemade Christmas Cards!"
 date = 2022-12-24
 draft =  false
 [taxonomies]
-tags = ["art"]
+tags = ["art", "dog", "elphaba"]
 medium = ["Digital"]
-series = ["christmas"]
+series = ["Christmas Cards"]
 [extra]
 images= ["card1.webp"]
 +++

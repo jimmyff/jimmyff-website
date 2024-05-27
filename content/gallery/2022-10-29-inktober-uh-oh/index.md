@@ -3,7 +3,7 @@ title = "Uh-ho 29/31, Inktober 2022"
 date = 2022-10-29
 draft =  false
 [taxonomies]
-tags = ["inktober", "art", "dog"]
+tags = ["inktober", "art", "dog", "elphaba"]
 medium = ["Digital"]
 series = ["inktober-2022"]
 [extra]

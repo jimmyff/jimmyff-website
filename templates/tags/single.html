@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>#{{ term.name }}</h1>
+
+<article>
+
+{# <code>    {{ term | json_encode(pretty=true) }}</code> #}
+
+
+{# <code>    {{ posts | json_encode(pretty=true) }}</code> #}
+
+{#  #}
+{% set posts_filtered = term  %} 
+
+{# <code>    {{ posts_filtered | json_encode(pretty=true) }}</code> #}
+
+
+{% set gallery_posts = posts_filtered.pages | filter (attribute="components.0", value="gallery")  %} 
+{% set blog_posts = posts_filtered.pages | filter (attribute="components.0", value="blog")  %} 
+
+{# 
+gallery
+<code>    {{ gallery_posts | json_encode(pretty=true) }}</code>
+
+blog
+<code>    {{ blog_posts | json_encode(pretty=true) }}</code> #}
+
+
+{% for year, posts in posts_filtered.pages | group_by(attribute="year") %}
+<ul class="posts flat">
+<h2 class="archive-year">{{ year }}</h2>
+
+{% set gallery_posts = posts | filter (attribute="components.0", value="gallery") %}
+{% set blog_posts = posts | filter (attribute="components.0", value="blog") %}
+
+{# gallery #}
+
+{% if gallery_posts | length > 0 %}  
+{# ({{gallery_posts|length}}) #}
+
+{# {% if gallery_posts | length > 0 and blog_posts | length > 0 %}  
+<h4>Gallery post{% if gallery_posts | length > 1 %}s{% endif %} from {{year}}</h4>
+{% endif -%} #}
+
+<ul class="gallery flat">
+
+{% for post in gallery_posts %}
+
+{% if post.extra.images  -%}
+{% for image in post.extra.images -%}
+
+
+{# { set image = resize_image(path=post.path ~ image, width=256, height=256, format=config.extra.image_format, quality=config.extra.thumbnail_quality) %} #}
+<li class="thumbnail">
+<a href="{{ post.permalink | safe }}" title="{{ post.title }} - {{ post.date }}">
+  {{ images::responsive_thumbnail(path=post.colocated_path, src=image, default_size=128, sizes=[128,256], alt=post.title  ~ " - "  ~ post.date ) -}}
+</a>
+</li>
+{% endfor -%}
+{% endif -%}
+{% endfor -%}
+</ul>
+{% endif -%}
+
+{% if gallery_posts | length > 0 and blog_posts | length > 0 %}  
+<hr class="subtle">
+{% endif -%}
+
+{# blog #}
+{% if blog_posts | length > 0 %}
+{# {% if gallery_posts | length > 0 and blog_posts | length > 0 %}  
+<h4>Blog post{% if blog_posts | length > 1 %}s{% endif %} from {{year}}</h4>
+{% endif -%} #}
+
+{% for post in blog_posts %}
+<li class="post">
+  <div class="post-header">
+    <div class="meta">
+      <div class="date">
+        <span class="day">{{ post.day }}</span>
+        <span class="rest">{{ post.date | date(format='%b') }}</span>
+      </div>
+    </div>
+    <div class="matter">
+      <div class="title small">
+        <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+        {% if post.draft %}<span class="draft">(Draft)</span>{% endif %}
+      </div>
+      {{ hooks::posts_below_title(page=post) }} 
+    </div>
+  </div>
+</li>
+{% endfor %}
+{% endif -%}
+</ul>
+{% endfor %}
+
+
+</article>
+  
+{% endblock content %}

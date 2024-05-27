@@ -1,0 +1,51 @@
+{% extends "base.html" -%}
+{% import "macros/projects.html" as projects -%}
+
+{% block content -%}
+<h1 class="title">
+    {{ page.title }}
+</h1>
+<article>
+    {{ page.content | safe }}
+</article>
+
+{% set projects = get_taxonomy(kind="project")  %}
+{% for project in projects.items | sort(attribute="pages.0.date") | reverse %}
+
+{%- set page_exists = load_data(path="projects/"~project.slug~".md", required=false) -%}
+{% if page_exists %}
+{% set page = get_page(path="projects/"~project.slug~".md") %}
+{# <code>{{ page | json_encode(pretty=true) }}</code> #}
+{% endif %}
+
+{% if page_exists and page.extra and page.extra.apps %}
+
+{% for app in page.extra.apps %}
+<div class="project">
+
+    <h2>{{app.name}}</h2>
+
+    <div class="body">
+
+        <div class="cover">
+            {{ images::responsive_image(path="@", src=app.icon, alt=app.name, default_size=256, sizes=[128,256,512],) }}
+        </div>
+    
+    
+        <div class="details">
+            <div class="small">Related Project: {{ projects::html_link(name=project.name) }}</div>
+            <div class="small">📱 <a href="{{ app.google }}">Google Play</a></div>
+            <div class="small">📱 <a href="{{ app.apple }}">Apple App Store</a></div>
+            {% if app.website %}
+            <div  class="small">🌍 <a href="{{ app.website }}">Website</a></div>
+            {% endif -%}
+        </div>
+    </div>
+
+
+{% endfor -%}
+
+{% endif %}
+{% endfor -%}
+
+{% endblock content -%}

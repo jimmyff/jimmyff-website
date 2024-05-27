@@ -3,7 +3,7 @@ title = "New and improved Mummy!"
 date = 2024-03-04
 draft =  false
 [taxonomies]
-tags = ["art", "gamedev-art", "gamedev-analogue"]
+tags = ["art", "gamedev-art", "tabletop-game-design"]
 medium = ["Digital"]
 series = ["Ultimate Quest Monsters"]
 project = ["Quest"]

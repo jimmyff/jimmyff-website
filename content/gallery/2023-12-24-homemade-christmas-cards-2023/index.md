@@ -3,9 +3,9 @@ title = "Elphie pulling Santa's sleigh!"
 date = 2023-12-24
 draft =  false
 [taxonomies]
-tags = ["art"]
+tags = ["art", "dog", "elphaba"]
 medium = ["Digital"]
-series = ["christmas"]
+series = ["Christmas Cards"]
 [extra]
 images= ["front.webp"]
 +++

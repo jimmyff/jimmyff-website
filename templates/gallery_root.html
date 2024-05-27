@@ -8,7 +8,7 @@
 
 
 {% set taxonomies = get_taxonomy(kind="medium")  -%}
-<ul class="list-inline">
+<ul class="list-inline small">
   <li class="label">Filter by medium:</li>
   {% for tax in taxonomies.items -%}
   {% set_global count = 0 -%}

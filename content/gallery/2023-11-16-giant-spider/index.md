@@ -3,7 +3,7 @@ title = "Giant Spider"
 date = 2023-11-16
 draft =  false
 [taxonomies]
-tags = ["art", "gamedev-art", "gamedev-analogue"]
+tags = ["art", "gamedev-art", "tabletop-game-design"]
 medium = ["Digital"]
 series = ["Ultimate Quest Monsters"]
 project = ["Quest"]

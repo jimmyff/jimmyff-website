@@ -29,7 +29,7 @@
       {%- if loop.index > 1 -%}
       {%- if loop.last %} and {% else -%},{% endif %}
       {% endif %}
-      <a href="{{ projects::url(name=project) }}">{{ project }}</a>      
+      {{ projects::html_link(name=project) }}      
       {% endfor -%}
        project{% if page.taxonomies["project"]|length >1 %}s{% endif %}.
       {% endif -%}

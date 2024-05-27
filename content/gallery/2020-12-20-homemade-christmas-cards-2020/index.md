@@ -5,7 +5,7 @@ draft =  false
 [taxonomies]
 tags = ["art"]
 medium = ["Digital"]
-series = ["christmas"]
+series = ["Christmas Cards"]
 [extra]
 images= ["santa.webp"]
 +++

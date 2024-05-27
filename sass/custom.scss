@@ -16,6 +16,11 @@ img[src$='#pixelate-small'] {
     max-width: 300px;
 }
 
+img.icon-with-text {
+    max-height: 1.5em;
+
+}
+
 .series {
     list-style: none;
     margin: 0;
@@ -88,7 +93,10 @@ img[src$='#pixelate-small'] {
 }
 
 
-
+.small {
+    font-size: 0.9em;
+    line-height: 1.4rem;
+}
 
 @media (max-width: 600px) {
     .date-simple {
@@ -111,18 +119,26 @@ img[src$='#pixelate-small'] {
     }
 }
 
+
+
 .list-inline {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    align-items: center;
 
     li {
-        display: inline-block;
-        padding: 0.5em;
         margin: 0;
 
         &.label {
-            padding-left: 0;
+            color: var(--text-color-alt);
+            display: flex;
+            gap: 0.5em;
+            align-items: center;
+
         }
     }
 }
@@ -210,9 +226,11 @@ header .links a {
 
 .list {
     .project {
-        max-width: 35em;
+        max-width: 45em;
         margin: 0 auto;
     }
+
+    padding-bottom: 1em;
 }
 
 .project {
@@ -266,6 +284,11 @@ header .links a {
         display: flex;
         gap: 1em;
         font-size: 0.9em;
+        flex-wrap: wrap;
+
+        div {
+            text-overflow: none;
+        }
 
 
         .count {

@@ -3,7 +3,7 @@ title = "Photo week 2 - Elphie again"
 date = 2022-06-16
 draft =  false
 [taxonomies]
-tags = ["art", "dog"]
+tags = ["art", "dog", "elphaba"]
 medium = ["Oil"]
 [extra]
 images= ["elphie.webp"] 
