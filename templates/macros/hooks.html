@@ -73,3 +73,25 @@
   {% endif -%}
 </ul>
 {% endmacro posts_below_title -%}
+
+
+
+{% macro og_image_tags() %}
+
+{%- if page.extra.cover -%}
+  {%- set_global url = images::responsive_image_url(path="@", src=page.extra.cover, width=1200, height=630) -%}
+{%- elif page.extra.images -%}
+  {%- set_global url = images::responsive_image_url(path= page.colocated_path, src=page.extra.images[0], width=1200, height=630) -%}
+{%- elif config.extra.open_graph_image -%}
+  {%- set_global url = images::responsive_image_url(path="", src=config.extra.open_graph_image, width=1200, height=630) -%}
+{%- elif config.extra.avatar -%}
+  {%- set_global url = images::responsive_image_url(path="", src=config.extra.avatar, width=1200, height=630) -%}
+{%- endif -%}
+
+{%- if url -%}
+<meta property="og:image" content="{{ url }}"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+{%- endif -%}
+
+{% endmacro og_image_tags %}

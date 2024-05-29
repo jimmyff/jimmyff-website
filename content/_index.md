@@ -7,7 +7,7 @@ in_search_index = true
 
 # Welcome! 👋
 
-Hello & welcome! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an [obsessive creator](/projects/), an [avid gamer](/games/), and dog lover. Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (_[see blog](/blog/)_). If you would like to contact me then [send me a message](https://docs.google.com/forms/d/e/1FAIpQLScIN2i8tudYfvWZO96Ed-_ma011PgZU-CrxRyCXdSA1z9NRjA/viewform). This website is first and foremost for me, it serves as a little diary which gives me a bit of record of the stuff I was up to many moons ago!
+Hello & welcome! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an [obsessive creator](/projects/), an [avid gamer](/games/), and dog lover. Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (_[see blog](/blog/)_). This website is first and foremost for me, it serves as a little diary which gives me a bit of record of the stuff I was up to many moons ago!
 
 ---
 
@@ -25,7 +25,7 @@ You can find my public projects over on my [Github profile](https://github.com/j
 
 ## Creative arts
 
-I always some creative endeavour on the go, you can check out the [gallery](/gallery) to see some of the things I've made. Some of the mediums include getting messy with clay doing [ceramics](/medium/ceramic/), playing around with my tablet creating [digital art](/medium/digital/) and making a mess with [oil paints](/medium/oil/). I also enjoy to practice yoga.
+I always some creative endeavour on the go, you can check out the [gallery](/gallery) to see some of the things I've made. Some of the mediums include getting messy with clay doing [ceramics](/medium/ceramic/), playing around with my tablet creating [digital art](/medium/digital/) and making a mess with [oil paints](/medium/oil/). I also enjoy to practice yoga and I usually get involved with the [Inktober](/inktober/) challenge!
 
 ---
 

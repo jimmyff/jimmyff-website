@@ -45,6 +45,7 @@ title_suffix = "a creative & geeky personal blog"
 
 keywords = "jimmy, forrester-fellowes, jimmyff, jimmy3ds, yorkshire, leeds, developer"
 avatar = "/avatar_2024.webp"
+open_graph_image = "/open_graph_image.webp"
 
 
 image_resizing_disabled = false

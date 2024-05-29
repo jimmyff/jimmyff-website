@@ -12,7 +12,7 @@ tag = "tabletop-game-design"
 
 I love both playing and creating games. Designing them uses similar problem solving skills to that of my software engineering background. Creating the game artworks and designing the components provides a great outlet for my creativity.
 
-I created my first game back in the early 2000's and since then I have designed many games spanning various themes and mechanisms. As well as games I have also created an open source tool for game component creation called [Deckorator](/tags/project-game-tools).
+I created my first game back in the early 2000's and since then I have designed many games spanning various themes and mechanisms. As well as games I have also created an open source tool for game component creation called [Deckorator](/project/deckorator).
 
 ---
 
