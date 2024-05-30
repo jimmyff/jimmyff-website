@@ -7,13 +7,13 @@ in_search_index = true
 
 # Welcome! 👋
 
-Hello & welcome! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an [obsessive creator](/projects/), an [avid gamer](/games/), and dog lover. Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (_[see blog](/blog/)_). This website is first and foremost for me, it serves as a little diary which gives me a bit of record of the stuff I was up to many moons ago!
+Hello & welcome! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an [obsessive creator](/projects/), an [avid gamer](/games/), and [dog lover](/tags/elphaba/). Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (_[see blog](/blog/)_). This website is first and foremost for me, it serves as a little diary which gives me a bit of record of the stuff I was up to many moons ago!
 
 ---
 
 ## Analogue & digital gaming
 
-Gaming is one of my cornerstones, probably as I find non-interactive activities pretty boring! I love [table top gaming](/boardgames) as a way of gathering friends and family around a table and having a great joint experience (feel free to [connect on BoardGameGeek](https://boardgamegeek.com/user/jimmyff)). I love to  [design board games](/tags/gamedev-analogue/) and I've dabbled with [video game development](/tags/gamedev-digital) too. I'm a passionate gamer although I don't get much time for video games these days but I remain a die hard [Nintendo](/tags/nintendo) fan-boy.
+Gaming is one of my cornerstones, probably as I find non-interactive activities pretty boring! I love [table top gaming](/games) as a way of gathering friends and family around a table and having a great joint experience (feel free to [connect on BoardGameGeek](https://boardgamegeek.com/user/jimmyff)). I love to  [design board games](/tags/tabletop-game-design/) and I've dabbled with [video game development](/tags/gamedev-digital) too. I'm a passionate gamer although I don't get much time for video games these days but I remain a die hard [Nintendo](/tags/nintendo) fan-boy.
 
 ---
 
