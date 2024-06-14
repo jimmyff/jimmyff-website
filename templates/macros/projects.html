@@ -14,7 +14,6 @@
 {% endmacro url %}
 
 {% macro html_link(name) -%}
-
 {% set project = get_taxonomy_term(kind="project", term=name)  %}
 {% set page_exists = load_data(path="projects/"~project.slug~".md", required=false) -%}
 {% if page_exists %}
@@ -23,9 +22,10 @@
 {% else %}
 {% set_global url = project.permalink %}
 {% endif %}
-
 <a href="{{ url }}">{% if page and page.extra and page.extra.emoji %}{{ page.extra.emoji }}{% else %}💡{% endif %} {{ project.name }}</a>  
 {% endmacro html_link %}
+
+
 
 
 
