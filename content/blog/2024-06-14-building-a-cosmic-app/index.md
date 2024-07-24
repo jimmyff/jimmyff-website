@@ -1,5 +1,5 @@
 +++
-title = "Decoding the Stars with AI"
+title = "Decoding the Stars with AI // Dev Log 1"
 date = 2024-06-14
 draft =  false
 [taxonomies]
