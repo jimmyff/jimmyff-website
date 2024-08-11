@@ -8,7 +8,8 @@ tags = []
 medium = []
 series = []
 [extra]
-cover = "/blog/2024-06-14-building-a-cosmic-app/cosmic.webp"
+cover = "/blog/2024-08-05-cosmic-dev-log-3/icon.webp"
+
 images= []
 emoji ="🌠"
 created = 2024-06-14
