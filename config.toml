@@ -65,6 +65,7 @@ link_bluesky_url = "https://bsky.app/profile/faehound.games"
 link_github_username = "jimmyff"
 link_medium_username = "jimmyff"
 link_instagram_username = "jimmyff_art"
+link_youtube_handle = "jimmyff-uk"
 
 # I have added credit to the zola & the theme on my main homepage under the heading "About this site"
 disable_powered_by = false
