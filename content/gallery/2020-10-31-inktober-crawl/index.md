@@ -5,7 +5,7 @@ draft =  false
 [taxonomies]
 tags = ["inktober", "art"]
 medium = ["Digital"]
-series = ["inktober-2020"]
+series = ["Inktober 2020"]
 [extra]
 images= ["crawl.webp", "crawl_outline.webp"]
 +++

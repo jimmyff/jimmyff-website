@@ -5,7 +5,7 @@ draft =  false
 [extra]
 images= ["fish.webp"]
 medium = ["Digital"]
-series = ["inktober-2020"]
+series = ["Inktober 2020"]
 [taxonomies]
 tags = ["inktober", "art"]
 +++

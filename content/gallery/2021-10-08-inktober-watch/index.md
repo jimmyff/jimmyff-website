@@ -5,7 +5,7 @@ draft =  false
 [taxonomies]
 tags = ["inktober", "art", "portrait", "neil"]
 medium = ["Digital"]
-series = ["inktober-2021", "neil"]
+series = ["Inktober 2021", "neil"]
 [extra]
 images= ["watch.webp"]
 +++

@@ -5,7 +5,7 @@ draft =  false
 [taxonomies]
 tags = ["inktober", "art", "nintendo"]
 medium = ["Digital"]
-series = ["inktober-2022"]
+series = ["Inktober 2022"]
 [extra]
 images= ["fowl.webp"]
 +++
