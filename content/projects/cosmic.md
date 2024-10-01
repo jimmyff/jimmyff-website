@@ -9,6 +9,7 @@ medium = []
 series = []
 [extra]
 cover = "/blog/2024-08-05-cosmic-dev-log-3/icon.webp"
+apps=[ { name="Kosmos", website="https://www.kosmos.space/", webapp="https://app.kosmos.space/", icon="/blog/2024-08-05-cosmic-dev-log-3/icon.webp", google="https://play.google.com/store/apps/details?id=space.kosmos.app", apple="https://apps.apple.com/us/app/kosmos-astrology/id6615060870" } ]
 
 images= []
 emoji ="🌠"

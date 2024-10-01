@@ -36,6 +36,9 @@
             <div class="small">Related Project: {{ projects::html_link(name=project.name) }}</div>
             <div class="small">📱 <a href="{{ app.google }}">Google Play</a></div>
             <div class="small">📱 <a href="{{ app.apple }}">Apple App Store</a></div>
+            {% if app.webapp %}
+            <div  class="small">📱 <a href="{{ app.webapp }}">Web App</a></div>
+            {% endif -%}
             {% if app.website %}
             <div  class="small">🌍 <a href="{{ app.website }}">Website</a></div>
             {% endif -%}
@@ -47,5 +50,6 @@
 
 {% endif %}
 {% endfor -%}
-
+<br />
+<br />
 {% endblock content -%}
