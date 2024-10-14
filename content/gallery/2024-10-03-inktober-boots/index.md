@@ -14,3 +14,7 @@ images= ["boots.webp"]
 {{ image(src="boots.webp", alt="Winged boots") }}
 
 > 👢 Beautifully crafted and feather light; these boots make every jump a flight...
+
+### Game play idea
+
+Allows the wearer to jump long distances! 🐸
