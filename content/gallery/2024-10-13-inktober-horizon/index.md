@@ -1,5 +1,5 @@
 +++
-title = "#13 horizon // Inktober 2024"
+title = "#13 Horizon // Inktober 2024"
 date = 2024-10-13
 draft =  false
 [taxonomies]
