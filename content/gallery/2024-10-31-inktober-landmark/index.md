@@ -21,4 +21,4 @@ I think this will be the settlement area of the 'Lost Kingdom' realm. From here 
 
 ---
 
-This wraps up another year of Inktober! This year was a bit of a struggle as I have so much going on with work and personal life but I managed to do it. I felt like I got in to my stride and started really enjoying the last week or so. I might continue doing the odd #Inktober52 prompts (one per week), to keep up the routine and continue creating assets for Ultimate Quest.
+Pheeeeew! ...So this wraps up another year of [Inktober](/inktober/)! This year was a bit of a struggle as I have so much going on with work and personal life but I managed to do it. I felt like I got in to my stride and started really enjoying the last week or so. I might continue doing the odd #Inktober52 prompts (one per week), to keep up the routine and continue creating assets for my passion project [Ultimate Quest](/projects/quest/)!
