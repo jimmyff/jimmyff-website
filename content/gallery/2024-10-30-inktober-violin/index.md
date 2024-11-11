@@ -17,4 +17,4 @@ images= ["violin.webp"]
 
 ### Game play ideas
 
-You might encounter this undead bard in a tavern or during a Quest ...Will you pay him a penny of a song?
+You might encounter this undead bard in a tavern or during a Quest ...Will you pay him a penny for a song?
