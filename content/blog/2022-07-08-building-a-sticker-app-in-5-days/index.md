@@ -3,7 +3,7 @@ title= "Building a sticker app in 5 days"
 date= 2022-07-08
 draft= false
 [taxonomies]
-tags= ["coding", "lang-dart", "flutter", "pride", "project-sticker-app"]
+tags= ["coding", "lang-dart", "flutter", "pride"]
 project = ["Stickers"]
 +++
 
