@@ -4,7 +4,7 @@ description = "A game of social deduction! Attempting to be juicer than Avalon b
 date = 2023-10-01
 draft =  false
 [taxonomies]
-tags = ["tabletop-gaming", "tabletop-game-design"]
+tags = [ "tabletop-game-design"]
 medium = []
 series = []
 [extra]

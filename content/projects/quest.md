@@ -4,7 +4,7 @@ description = "I'm creating my ultimate dungeon crawl game! I want something tha
 date = 2023-10-01
 draft =  false
 [taxonomies]
-tags = ["tabletop-gaming", "tabletop-game-design"]
+tags = [ "tabletop-game-design"]
 medium = []
 series = []
 [extra]
