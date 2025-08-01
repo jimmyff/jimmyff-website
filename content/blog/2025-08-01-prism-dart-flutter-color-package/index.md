@@ -1,5 +1,5 @@
 +++
-title = "Prism: Color Package for Dart & Flutter"
+title = "Prism: Color Library for Dart & Flutter"
 date = 2025-08-01
 draft =  false
 [taxonomies]
@@ -11,7 +11,7 @@ project = []
 images= []
 +++
 
-> Prism is a powerful color package for Dart + Flutter supporting various colors spaces (including Rgb + Oklch) and palettes (such as Material colors).
+> Prism is an optimized, zero-dependency color manipulation library for Dart & Flutter with multiple color models, accessibility tools, and pre-built palettes.
 
 I've always been fascinated with colors and color theory. I've designed a board game and an app around it, and [in my amateur artworks](/gallery/glass-containers/) I seem to subconsciously gravitate to complementary palettes. Over the years I've written a couple of unpublished color libraries. The first was Chroma which I later replaced with Pigment. I had planned to publish Pigment but due to a name clash I re-branded it. I'm pleased to announce Prism is now available over on [pub.dev](https://pub.dev/packages/prism) and [github](https://github.com/jimmyff/prism). While the concepts aren't new, Prism is a comprehensive and thoughtfully designed package that makes working with modern color spaces in Dart really easy.
 
@@ -22,20 +22,20 @@ I've always been fascinated with colors and color theory. I've designed a board 
 
 To understand what makes prism useful I need to briefly explain color spaces. These are systems for describing and storing colors:
 
-### RGB - The Language of Screens
+### RGB - The Color Model of Screens
 
-Your phone or laptop screen creates colours by mixing light. Each pixel is made of tiny red, green, and blue sub-pixels (RGB). If all are off, you get black; if all are on full, you get white. This is great for screens, but it's not very intuitive for humans.
+Your phone or laptop screen creates colors by mixing light. Each pixel is made of tiny red, green, and blue sub-pixels (RGB). If all are off, you get black; if all are on full, you get white. This is great for screens, but it's not very intuitive for humans.
 
-If you want to make a colour lighter or change its hue, you're just fiddling with Red, Green, and Blue values. Worse, if you try to create a gradient between two colours in RGB, you often get a muddy, greyish colour in the middle. This is because the math of RGB doesn't match up with how our eyes actually perceive colour and lightness.
+If you want to make a color lighter or change its hue, you're just fiddling with Red, Green, and Blue values. Worse, if you try to create a gradient between two colors in RGB, you often get a muddy, greyish color in the middle. This is because the math of RGB doesn't match up with how our eyes actually perceive color and lightness.
 
 Color spaces like HSL and HSV were created to make manipulating RGB colors easier. However, they are fundamentally flawed, as their handling of lightness and value is inconsistent across different hues.
 
 ### Oklab + Oklch - A More Human Approach
 
-This is the problem Oklab and Oklch are designed to solve. They are modern color spaces built around how humans perceive colour, focusing on three things:
+This is the problem Oklab and Oklch are designed to solve. They are modern color spaces built around how humans perceive color, focusing on three things:
 
 - **L** - Lightness (how light or dark it appears)
-- **C** - Chroma (how vibrant or intense the colour is)
+- **C** - Chroma (how vibrant or intense the color is)
 - **H** - Hue (the actual color, like red, green, blue)
 
 The magic is that "Lightness" in Oklch is perceptually uniform. This means you can change the hue or chroma and the perceived lightness won't change. This is a game-changer for creating accessible UIs with proper contrast, and for creating beautiful, vibrant gradients that don't turn to mud.
@@ -44,7 +44,7 @@ While the math behind this is complex (I used the brilliant formulas from [Björ
 
  ---
 
- Hopefully the above gives you a little overview of why a dedicated colour library is useful. Prism provides a really easy way to create, manipulate and store colors. Prism currently supports Rgb8, Rgb16, Hsl, Hsv, Oklch and Oklab color spaces, and makes it trivial to convert between them. Here's a little example:
+ Hopefully the above gives you a little overview of why a dedicated color library is useful. Prism provides a really easy way to create, manipulate and store colors. Prism currently supports Rgb8, Rgb16, Hsl, Hsv, Oklch and Oklab color spaces, and makes it trivial to convert between them. Here's a little example:
 
 
 ```dart
