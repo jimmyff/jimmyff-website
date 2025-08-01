@@ -3,26 +3,7 @@
 {% extends "base.html" %} {% block content %}
 <h1 class="title">{{ section.title }}</h1>
 
-
-  {{ section.content | safe }} 
-
-
-{% set taxonomies = get_taxonomy(kind="medium")  -%}
-<ul class="list-inline small">
-  <li class="label">Filter by medium:</li>
-  {% for tax in taxonomies.items -%}
-  {% set_global count = 0 -%}
-  {% for page in tax.pages -%}
-  {# <code>{{ page | json_encode(pretty=true) }}</code> #}
-  {# {% if page.extra and page.extra.images %} #}
-  {% set images = page.extra.images | length %}
-  {% set_global count = count + images -%}
-  {# {% endif -%} #}
-  {% endfor -%}
-  <li><a href='{{tax.permalink }}'>{{ tax.name }}</a> ({{count }})</li>
-{% endfor -%}
-</ul>
-
+<article>{{ section.content | safe }}</article>
 
 {% for year, posts in section.pages | group_by(attribute="year") -%}
 <ul class="gallery flat">
@@ -45,6 +26,25 @@
 
 </ul>
 {% endfor %}
+
+<hr />
+
+{% set taxonomies = get_taxonomy(kind="medium")  -%}
+<ul class="list-inline small">
+  <li class="label">Filter by medium:</li>
+  {% for tax in taxonomies.items -%}
+  {% set_global count = 0 -%}
+  {% for page in tax.pages -%}
+  {# <code>{{ page | json_encode(pretty=true) }}</code> #}
+  {# {% if page.extra and page.extra.images %} #}
+  {% set images = page.extra.images | length %}
+  {% set_global count = count + images -%}
+  {# {% endif -%} #}
+  {% endfor -%}
+  <li><a href='{{tax.permalink }}'>{{ tax.name }}</a> ({{count }})</li>
+{% endfor -%}
+</ul>
+
 
 {% endblock content %}
 
