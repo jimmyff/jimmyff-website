@@ -364,3 +364,14 @@ pre table {
   width: 100%;
   border-collapse: collapse;
 }
+
+// Text selection styling
+::selection {
+  background: var(--light-grey); // Hot pink #ff00d3
+  color: var(--bg-color); // Black text
+}
+
+::-moz-selection {
+  background: var(--light-grey);
+  color: var(--bg-color);
+}
