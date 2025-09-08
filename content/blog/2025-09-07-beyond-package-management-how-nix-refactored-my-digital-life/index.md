@@ -33,7 +33,7 @@ My biggest challenge was the Nixelbook's audio. After replacing the firmware, I 
 
 Earlier this year [Google released 'Linux Terminal' which provides a virtualized Linux environment on Android](https://www.androidauthority.com/android-linux-terminal-app-available-3532999/), of course [there is already Nix support](https://github.com/nix-community/nix-on-droid). I'm going to configure my Pixel phone as a host in my nix config which will give me a fully-fledged, perfectly configured Linux OS in my pocket- everything setup just the way I like it. I could also play with using Nix as a tool for configuring cloud infrastructure -something I would like to explore further down the road.
 
-My closing comment is that Nix has blown me away. It's refactored my chaotic digital life in to something well structured, thoughtfully considered, reproducible and dependable, and I'm reaping the rewards of all of this already. I urge everyone to take a look at Nix and give it the time it deserves; you can thank me later (_over in my [guestbook](http://127.0.0.1:1111/guestbook/)!_).
+My closing comment is that Nix has blown me away. It's refactored my chaotic digital life in to something well structured, thoughtfully considered, reproducible and dependable, and I'm reaping the rewards of all of this already. I urge everyone to take a look at Nix and give it the time it deserves; you can thank me later (_over in my [guestbook](/guestbook/)!_).
 
 ---
 
