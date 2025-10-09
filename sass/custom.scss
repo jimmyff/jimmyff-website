@@ -365,6 +365,12 @@ pre table {
   border-collapse: collapse;
 }
 
+
+p code {
+    font-size: 1em;
+    color:var(--white);
+    background-color: var(--black);
+}
 // Text selection styling
 ::selection {
   background: var(--light-grey); // Hot pink #ff00d3
