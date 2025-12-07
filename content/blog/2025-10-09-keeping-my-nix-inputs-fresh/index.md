@@ -17,6 +17,6 @@ So, I created a little nushell script called [flake-freshness](https://github.co
 
 I run it on system startup so I get a quick overview before deciding what to update. It's made managing multiple inputs a lot less of a chore.
 
-## {{ image (src="stay-fresh.webp", alt="Splatoon characters Callie & Marie with the text 'Stay Fresh!'") }}
+{{ image (src="stay-fresh.webp", alt="Splatoon characters Callie & Marie with the text 'Stay Fresh!'") }}
 
 My entire Nix config, including other scripts like this, is available on GitHub: [github.com/jimmyff/nixfiles](https://github.com/jimmyff/nixfiles). Stay Fresh! 🦑
