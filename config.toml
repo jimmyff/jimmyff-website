@@ -5,7 +5,7 @@ description = "Fun loving creative (he/him) 🏳️‍🌈"
 base_url = "https://www.jimmyff.co.uk"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+compile_sass = false
 
 # Feeds
 generate_feeds = true
