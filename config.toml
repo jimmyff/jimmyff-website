@@ -13,10 +13,10 @@ feed_filenames = ["atom.xml", "rss.xml"]
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
 minify_html = true
 default_language = "en"
-
-theme = "zola-inky"
+theme = "zap"
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 # Example:
@@ -35,23 +35,31 @@ taxonomies = [
   # , render = false
 ]
 
+[search]
+index_format = "fuse_javascript"
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
+highlight_code = false
 
 
 [extra]
 
 # Put all your custom variables here
-google_analytics_tag_id = 'G-71ZN1D4H6Q'
+# google_analytics_tag_id = 'G-71ZN1D4H6Q'
+umami_website_id = '3b272798-439a-429c-b9e8-0e9090275205'
+umami_domains = 'www.jimmyff.co.uk,jimmyff.co.uk'
 title_suffix = "a creative & geeky personal blog"
 
 keywords = "jimmy, forrester-fellowes, jimmyff, jimmy3ds, yorkshire, leeds, developer"
 avatar = "/avatar_2024.webp"
 open_graph_image = "/open_graph_image.webp"
+favicon = "/favicon.ico"
 
-
+inline_icons = true
+icon_path = "static/icons/"
+icons = ["home", "chat", "color-palette", "idea", "gamification", "cube", "wikis", "search", "light", "asleep", "rss"]
 image_resizing_disabled = false
 image_format = "webp"             # "auto", "jpg", "png", "webp"
 image_quality = 80
@@ -75,13 +83,17 @@ link_youtube_handle = "jimmyff-uk"
 disable_powered_by = false
 
 menu_links = [
-  # { url = "$BASE_URL/", name = "Home", emoji = "🏠" },
-  { url = "$BASE_URL/blog/", name = "Blog", emoji = "📖" },
-  { url = "$BASE_URL/gallery/", name = "Gallery", emoji = "🎨" },
-  { url = "$BASE_URL/projects/", name = "Projects", emoji = "💡" },
-  { url = "$BASE_URL/games/", name = "Games", emoji = "🎲" },
-  # { url = "$BASE_URL/search/", name = "Search", emoji = "🔎" },
+  { url = "$BASE_URL/", name = "About", emoji = "🏠", icon = "home.svg" },
+  { url = "$BASE_URL/blog/", name = "Blog", emoji = "📖", icon = "chat.svg" },
+  { url = "$BASE_URL/gallery/", name = "Gallery", emoji = "🎨", icon = "color-palette.svg" },
+  { url = "$BASE_URL/projects/", name = "Projects", emoji = "💡", icon = "idea.svg" },
+  { url = "$BASE_URL/games/", name = "Games", emoji = "🎲", icon = "gamification.svg" },
+  { url = "$BASE_URL/apps/", name = "Apps", emoji = "📱", icon = "cube.svg" },
 
+  { url = "$BASE_URL/guestbook/", name = "Guestbook", emoji = "🌍", icon = "wikis.svg" },
+  #  { url = "$BASE_URL/inktober/", name = "Inktober", emoji = "🎨" },
+
+  { url = "$BASE_URL/search/", name = "Search", emoji = "🔎", icon = "search.svg" },
 
 ]
 

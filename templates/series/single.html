@@ -1,43 +1,36 @@
 {% extends "base.html" %}
 
+{% block head_extra %}
+<style>
+.sr{list-style:none;padding:0}
+.sr>li{display:flex;gap:1rem;margin-bottom:1.5rem}
+.sr img{width:10rem;height:auto}
+.sr .d{flex:1}
+@media(max-width:30em){.sr>li{flex-direction:column}.sr img{width:100%;height:auto}.sr .d{text-align:center}}
+</style>
+{% endblock head_extra %}
+
 {% block content %}
 
 <h1>{{taxonomy.name | capitalize }} &raquo; {{ term.name | capitalize }}</h1>
 
 {% for year, posts in term.pages | sort(attribute="date") | group_by(attribute="year") %}
-<ul class="series flat">
-  <h2 class="archive-year">{{ year }}</h2>
+<h2>{{ year }}</h2>
+<ul class="sr">
   {% for post in posts %}
-  
-    <li class="post">
-
-      {% for image in post.extra.images %}
-        {% set image = resize_image(path=post.path ~ image, op="fit_width", width=384, format=config.extra.image_format, quality=70) %}
-          <div class="thumbnail">
-            <a href="{{ post.permalink | safe }}" title="{{ post.title }} - {{ post.date }}"><img src="{{ image.url }}" alt="{{ post.title }} - {{ post.date }}" /></a>
-          </div>
-        {% endfor %}
-        <div class="details">
-          <div class="post-header">
-          
-            <div class="matter">
-              <div class="title small">
-                <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
-                {% if post.draft %} <span class="draft">(Draft)</span>{% endif %}
-              </div>
-              <div class="meta">
-                <div class="date-simple small">
-                  {{ post.date | date(format="%d %B %Y") }}
-                </div>
-              </div>
-              <span class="description"> {{post.description}} </span>
-            </div>
-        </div>
-      </div>
-    </li>
-    {% endfor %}
-
+  <li>
+    {% if post.extra.images %}
+    {% set img = resize_image(path=post.path ~ post.extra.images[0], op="fit_width", width=320, format=config.extra.image_format, quality=70) %}
+    <a href="{{ post.permalink | safe }}"><img src="{{ img.url }}" alt="{{ post.title }}"></a>
+    {% endif %}
+    <div class="d">
+      <div><a href="{{ post.permalink | safe }}">{{ post.title }}</a>{% if post.draft %} (Draft){% endif %}</div>
+      <div class="s">{{ post.date | date(format="%d %B %Y") }}</div>
+      {% if post.description %}<p class="s">{{ post.description }}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
 </ul>
 {% endfor %}
-  
+
 {% endblock content %}

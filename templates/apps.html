@@ -33,14 +33,14 @@
     
     
         <div class="details">
-            <div class="small">Related Project: {{ projects::html_link(name=project.name) }}</div>
-            <div class="small">📱 <a href="{{ app.google }}">Google Play</a></div>
-            <div class="small">📱 <a href="{{ app.apple }}">Apple App Store</a></div>
+            <div class="s">Related Project: {{ projects::html_link(name=project.name) }}</div>
+            <div class="s">📱 <a href="{{ app.google }}">Google Play</a></div>
+            <div class="s">📱 <a href="{{ app.apple }}">Apple App Store</a></div>
             {% if app.webapp %}
-            <div  class="small">📱 <a href="{{ app.webapp }}">Web App</a></div>
+            <div class="s">📱 <a href="{{ app.webapp }}">Web App</a></div>
             {% endif -%}
             {% if app.website %}
-            <div  class="small">🌍 <a href="{{ app.website }}">Website</a></div>
+            <div class="s">🌍 <a href="{{ app.website }}">Website</a></div>
             {% endif -%}
         </div>
     </div>

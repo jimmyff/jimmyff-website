@@ -8,6 +8,7 @@ tags= ["coding", "gamedev-digital", "lang-javascript"]
 
 
 <script src="renderer-test.js"></script>
+<style>#canvasContainer canvas{max-width:100%;height:auto}</style>
 <div id="canvasContainer"></div>
 
 <script>

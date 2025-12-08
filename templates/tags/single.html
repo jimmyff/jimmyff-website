@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>#{{ term.name }}</h1>
+<h1>{{ term.name }}</h1>
 
 <article>
 
@@ -29,72 +29,39 @@ blog
 
 
 {% for year, posts in posts_filtered.pages | group_by(attribute="year") %}
-<ul class="posts flat">
-<h2 class="archive-year">{{ year }}</h2>
+<hr>
+<h2>{{ year }}</h2>
 
 {% set gallery_posts = posts | filter (attribute="components.0", value="gallery") %}
 {% set blog_posts = posts | filter (attribute="components.0", value="blog") %}
 
-{# gallery #}
-
-{% if gallery_posts | length > 0 %}  
-{# ({{gallery_posts|length}}) #}
-
-{# {% if gallery_posts | length > 0 and blog_posts | length > 0 %}  
-<h4>Gallery post{% if gallery_posts | length > 1 %}s{% endif %} from {{year}}</h4>
-{% endif -%} #}
-
-<ul class="gallery flat">
-
+{% if gallery_posts | length > 0 %}
+<div class="g">
 {% for post in gallery_posts %}
-
 {% if post.extra.images  -%}
 {% for image in post.extra.images -%}
-
-
-{# { set image = resize_image(path=post.path ~ image, width=256, height=256, format=config.extra.image_format, quality=config.extra.thumbnail_quality) %} #}
-<li class="thumbnail">
-<a href="{{ post.permalink | safe }}" title="{{ post.title }} - {{ post.date }}">
-  {{ images::responsive_thumbnail(path=post.colocated_path, src=image, default_size=128, sizes=[128,256], alt=post.title  ~ " - "  ~ post.date ) -}}
-</a>
-</li>
+<a href="{{ post.permalink | safe }}" title="{{ post.title }} - {{ post.date }}">{{ images::responsive_thumbnail(path=post.colocated_path, src=image, default_size=128, sizes=[128,256], alt=post.title  ~ " - "  ~ post.date ) -}}</a>
 {% endfor -%}
 {% endif -%}
 {% endfor -%}
-</ul>
+</div>
 {% endif -%}
 
-{% if gallery_posts | length > 0 and blog_posts | length > 0 %}  
-<hr class="subtle">
+{% if gallery_posts | length > 0 and blog_posts | length > 0 %}
+<hr>
 {% endif -%}
 
-{# blog #}
 {% if blog_posts | length > 0 %}
-{# {% if gallery_posts | length > 0 and blog_posts | length > 0 %}  
-<h4>Blog post{% if blog_posts | length > 1 %}s{% endif %} from {{year}}</h4>
-{% endif -%} #}
-
-{% for post in blog_posts %}
-<li class="post">
-  <div class="post-header">
-    <div class="meta">
-      <div class="date">
-        <span class="day">{{ post.day }}</span>
-        <span class="rest">{{ post.date | date(format='%b') }}</span>
-      </div>
-    </div>
-    <div class="matter">
-      <div class="title small">
-        <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
-        {% if post.draft %}<span class="draft">(Draft)</span>{% endif %}
-      </div>
-      {{ hooks::posts_below_title(page=post) }} 
-    </div>
-  </div>
-</li>
-{% endfor %}
-{% endif -%}
+<ul class="p">
+  {% for post in blog_posts %}
+  <li>
+    <time datetime="{{ post.date }}"><span>{{ post.date | date(format='%d') }}</span><span class="s">{{ post.date | date(format='%b') }}</span></time>
+    <div><a href="{{ post.permalink | safe }}">{{ post.title }}</a>{% if post.draft %} (Draft){% endif %}
+    {{ hooks::posts_below_title(page=post) }}</div>
+  </li>
+  {% endfor %}
 </ul>
+{% endif -%}
 {% endfor %}
 
 

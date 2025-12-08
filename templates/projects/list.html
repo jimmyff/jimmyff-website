@@ -3,6 +3,10 @@
 {% import "macros/taxonomies.html" as taxonomies -%}
 {% import "macros/projects.html" as projects -%}
 
+{% block head_extra %}
+{% include "partials/css-project.html" %}
+{% endblock head_extra %}
+
 {% block content -%}
 <h1 class="title">
     {{ section.title }}
@@ -20,7 +24,7 @@
 <section class="list">
 
 {% for project in projects.items | sort(attribute="pages.0.date") | reverse %}
-
+{% if not loop.first %}<hr>{% endif %}
 {%- set page_exists = load_data(path="projects/"~project.slug~".md", required=false) -%}
 {% if page_exists %}
 {% set page = get_page(path="projects/"~project.slug~".md") %}
@@ -32,8 +36,7 @@
 {% endfor -%}
 </section>
 
-<br />
-
 {# <code>{{ projects | json_encode(pretty=true) }}</code> #}
 
+</article>
 {% endblock content %}

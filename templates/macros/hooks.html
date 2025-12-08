@@ -5,7 +5,7 @@
 {% macro inline_links(slugs, prefix, joiningWord) %}{% for slug in slugs %}{% if loop.last and loop.index0 > 0 %} {{ joiningWord }} {% endif %}<a href="{{ prefix }}{{ slug }}">{{ slug | capitalize }}</a>{% if not loop.last %},{% endif %}{% endfor %}{% endmacro inline_links %}
 
 {% macro tag_list(slugs, prefix, label) %}
-<ul class="tags">
+<ul class="tags s">
 {% if label %}
 <li>{{ label }}</li>
 {% endif %}
@@ -65,7 +65,7 @@
 {% macro post_below_content(page) -%}{% endmacro post_below_content -%}
 
 {% macro posts_below_title(page) -%}
-<ul class="tags subtle">
+<ul class="tags s">
 {% if page.taxonomies is containing ("tags") -%}
   {% for tag in page.taxonomies["tags"] | sort -%}
     <li><a href='{{ config.base_url | safe }}/tags/{{ tag | slugify }}'>{{ tag }}</a></li>
@@ -94,6 +94,7 @@
 <meta property="og:image" content="{{ url | trim}}"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
+<meta name="twitter:image" content="{{ url | trim}}"/>
 {%- endif -%}
 
 {% endmacro og_image_tags %}

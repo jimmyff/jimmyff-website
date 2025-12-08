@@ -13,6 +13,17 @@
 <div id="disqus_thread"></div>
 
 <script>
+(function(){
+  var c=document.createElement('canvas'),x=c.getContext('2d',{willReadFrequently:true});c.width=c.height=1;
+  function toHex(v){x.fillStyle=v;x.fillRect(0,0,1,1);var d=x.getImageData(0,0,1,1).data;return'#'+[d[0],d[1],d[2]].map(function(n){return n.toString(16).padStart(2,'0')}).join('')}
+  function convert(s){return s?s.replace(/oklch\([^)]+\)/g,function(m){return toHex(m)}):s}
+  // Shim CSSStyleRule.cssText
+  var cssDesc=Object.getOwnPropertyDescriptor(CSSStyleRule.prototype,'cssText');
+  if(cssDesc)Object.defineProperty(CSSStyleRule.prototype,'cssText',{get:function(){return convert(cssDesc.get.call(this))},set:cssDesc.set});
+  // Shim CSSStyleDeclaration
+  var origGetProp=CSSStyleDeclaration.prototype.getPropertyValue;
+  CSSStyleDeclaration.prototype.getPropertyValue=function(p){return convert(origGetProp.call(this,p))};
+})();
 
     var disqus_config = function () {
         this.page.url = "{{ current_url | safe}}";      

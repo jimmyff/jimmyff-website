@@ -1,7 +1,7 @@
 +++
 title = "My apps"
 images = []
-template = "apps.html"
+template = "apps/list.html"
 in_search_index = true
 +++
 

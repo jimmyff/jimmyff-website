@@ -1,4 +1,4 @@
-
+{% import "macros/icons.html" as icons -%}
 {# Returns all the values in a taxonmy, would be nice to sort by count #}
 
 {% macro url(name) -%}
@@ -29,7 +29,7 @@
 
 
 
-{% macro summary(name, onpage=false) -%}
+{% macro summary(name, onpage=false, app_page=false, app_index=0, hide_link=false) -%}
 
 {% set project = get_taxonomy_term(kind="project", term=name)  %}
 
@@ -48,105 +48,53 @@
 <div class="project">
     {# <code>{{ project | json_encode(pretty=true) }}</code> #}
 
+        {% if onpage %}
+        <h1>{{ emoji }} Project {{ project.name }}</h1>
+        {% elif app_page and page_exists and page.extra and page.extra.apps %}
+        <h3>{{ page.extra.apps[app_index].name }} App</h3>
+        {% else %}
+        <h3>{{ emoji }} Project {{ project.name }}</h3>
+        {% endif %}
 
-    <div class="project">
+        {% if app_page and page_exists and page.extra and page.extra.apps -%}
+        <div class="cover app-icon">
+            {{ images::responsive_image(path="@", src=page.extra.apps[app_index].icon, alt=page.extra.apps[app_index].name, default_size=config.extra.images_default_size, sizes=config.extra.images_sizes) }}
+        </div>
+        {% elif page and page.extra and page.extra.cover -%}
+        <div class="cover">
+            {{ images::responsive_image(path="@", src=page.extra.cover, alt=project.name, default_size=config.extra.images_default_size, sizes=config.extra.images_sizes) }}
+        </div>
+        {% endif -%}
+
+        {% set last = project.pages | last %}
+        <p class="stats s">
+            {{ project.pages.0.date | date(format="%B %Y") }} ·
+            {% if config.extra.inline_icons %}{{ icons::icon(name="chat.svg") }}{% else %}<img src="/icons/chat.svg" alt="Blog">{% endif %} {{ project.pages | filter(attribute="ancestors.1", value="blog/_index.md") | length }}
+            {% if config.extra.inline_icons %}{{ icons::icon(name="color-palette.svg") }}{% else %}<img src="/icons/color-palette.svg" alt="Gallery">{% endif %} {{ project.pages | filter(attribute="ancestors.1", value="gallery/_index.md") | length }}
+        </p>
+
+        {% if page_exists and page.description and not app_page %}
+        <p>{{ page.description }}</p>
+        {% endif -%}
+
+        {% if app_page and page_exists and page.extra and page.extra.apps %}
+        {% set app = page.extra.apps[app_index] %}
+        <p class="s">📱 <a href="{{ app.google }}">Google Play</a> · <a href="{{ app.apple }}">Apple</a>{% if app.website %} · <a href="{{ app.website }}">Web</a>{% endif %}</p>
+        {% endif -%}
 
         {% if onpage %}
+        {% if page and page.taxonomies and page.taxonomies["tags"] -%}
+        <ul class="tags s">
+            {% for tag in page.taxonomies["tags"] %}
+              <li><a href='{{ config.base_url | safe }}/tags/{{ tag | slugify }}'>{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif -%}
+        {% endif -%}
 
-
-        <h1>
-            {% if page and page.permalink  -%}
-            {{ emoji }} Project {{ project.name }}
-            {% else -%}
-            {{ emoji }} Project {{ project.name }}
-            {% endif -%}
-        
-        </h1>
-        {% else %}
-
-        <h3>
-            {% if page and page.permalink  -%}
-            <a href="{{ page.permalink | safe }}">{{ emoji }} Project {{ project.name }}</a>
-            {% else -%}
-            <a href="{{ project.permalink | safe }}">{{ emoji }} Project {{ project.name }}</a>
-            {% endif -%}
-        
-        </h3>
-
-        {% endif %}
-        
-            <div class="body">
-        
-                <div class="cover">
-                    {% if page and page.extra and page.extra.cover -%}
-                        {{ images::responsive_image(path="@", src=page.extra.cover, alt=project.name, default_size=config.extra.images_default_size, sizes=config.extra.images_sizes) }}
-                    {% else -%}
-                        <span class="emoji">
-                            {{ emoji }}
-                        </span>
-                    {% endif -%}
-                </div>
-        
-            {% set last = project.pages | last %}
-                
-              <div class="details">
-                {% if page_exists and page.description %}
-                <p>{{ page.description }}</p>
-                {% endif -%}
-
-        
-                {# {{ taxonomies::values_for_pages(taxonmy=project, pages=project.items, label="") }} #}
-                <div class="stats">
-                    <div class="count blog">{{ project.pages | filter(attribute="ancestors.1", value="blog/_index.md") | length }}</div> 
-                    
-            
-                    <div class="count gallery">{{ project.pages | filter(attribute="ancestors.1", value="gallery/_index.md") | length }}</div>
-                
-                    
-                    
-                {# <div  class="date">Created: <span>{{ last.date | date(format="%-d %B %Y") }}</span></div>
-                {% if  last.date != project.pages.0.date -%}
-             
-                <div class="date">Updated: <span>{{ project.pages.0.date | date(format="%-d %B %Y") }}</span></div> 
-                {% endif -%} #}
-        
-                    <div class="date">Updated: <span>{{ project.pages.0.date | date(format="%B %Y") }}</span></div> 
-                
-                    
-                    </div>
-        
-                {# Apps #}
-                {% if onpage %}
-                {% if page_exists and page.extra and page.extra.apps %}
-
-                {% for app in page.extra.apps %}
-                <ul class="app list-inline">
-                    <li class="label">
-                        {{ images::responsive_image(path="@", src=app.icon, alt=app.name, default_size=128, sizes=[128,256,512], class="icon-with-text") }}
-                        {{app.name}} (App)
-                    </li>
-                    <li class="small">📱 <a href="{{ app.google }}">Google Play</a></li>
-                    <li class="small">📱 <a href="{{ app.apple }}">Apple App Store</a></li>
-                    {% if app.website %}
-                    <li  class="small">🌍 <a href="{{ app.website }}">Website</a></li>
-                    {% endif -%}
-                </ul>
-                {% endfor -%}
-                {% endif -%}
-                {% endif -%}
-                
-                {# Tags #}
-                {% if page and page.taxonomies and page.taxonomies["tags"] -%}
-                <ul class="tags">
-                    {% for tag in page.taxonomies["tags"] %}
-                      <li><a href='{{ config.base_url | safe }}/tags/{{ tag | slugify }}'>{{ tag }}</a></li>
-                    {% endfor %}
-                  </ul>
-                {% endif -%}
-                 
-              </div>
-            </div>
-        </div>
+        {% if not onpage and not hide_link -%}
+        <p class="view-link"><strong><a href="{% if page and page.permalink %}{{ page.permalink | safe }}{% else %}{{ project.permalink | safe }}{% endif %}">View Project &raquo;</a></strong></p>
+        {% endif -%}
 
 </div>
 

@@ -13,54 +13,34 @@
 {# <code>    {{ posts_filtered | json_encode(pretty=true) }}</code> #}
 
 <h3>Latest from the gallery</h3>
-<ul class="gallery flat"></ul>
-
+<div class="g">
 {% set idx = 0 -%}
 {% for post in posts_filtered[0].pages %}
 {% if post.components is containing ("gallery")  %}
 {% if post.extra.images  -%}
 {% for image in post.extra.images -%}
-
 {% set_global idx = idx + 1 -%}
 {% if idx <= 12 -%}
-
-{# { set image = resize_image(path=post.path ~ image, width=256, height=256, format=config.extra.image_format, quality=config.extra.thumbnail_quality) %} #}
-<li class="thumbnail">
-  <a href="{{ post.permalink | safe }}" title="{{ post.title }} - {{ post.date }}">
-    {{ images::responsive_thumbnail(path=post.colocated_path, src=image, default_size=128, sizes=[128,256], alt=post.title  ~ " - "  ~ post.date ) -}}
-  </a>
-</li>
+<a href="{{ post.permalink | safe }}" title="{{ post.title }} - {{ post.date }}">{{ images::responsive_thumbnail(path=post.colocated_path, src=image, default_size=128, sizes=[128,256], alt=post.title  ~ " - "  ~ post.date ) -}}</a>
 {% endif -%}
 {% endfor -%}
 {% endif -%}
 {% endif -%}
 {% endfor -%}
-</ul>
+</div>
 
 <h3>Latest from the blog</h3>
-<ul class="posts flat">
+<ul class="p">
     {% set idx = 0 -%}
     {% set more_content = false -%}
     {% for post in posts_filtered[0].pages %}
     {% if post.components is containing ("blog")  %}
     {% set_global idx = idx + 1 -%}
     {% if idx <= 6 -%}
-  <li class="post">
-    <div class="post-header">
-      <div class="meta">
-        <div class="date">
-          <span class="day">{{ post.day }}</span>
-          <span class="rest">{{ post.date | date(format='%b') }}</span>
-        </div>
-      </div>
-      <div class="matter">
-        <div class="title small">
-          <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
-          {% if post.draft %}<span class="draft">(Draft)</span>{% endif %}
-        </div>
-        {{ hooks::posts_below_title(page=post) }} 
-      </div>
-    </div>
+  <li>
+    <time datetime="{{ post.date }}"><span>{{ post.date | date(format='%d') }}</span><span class="s">{{ post.date | date(format='%b') }}</span></time>
+    <div><a href="{{ post.permalink | safe }}">{{ post.title }}</a>{% if post.draft %} (Draft){% endif %}
+    {{ hooks::posts_below_title(page=post) }}</div>
   </li>
   {% else %}
     {% set_global more_content = true -%}

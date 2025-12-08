@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import "macros/images.html" as images -%}
+{% import "macros/projects.html" as projects -%}
+
+{% block head_extra %}
+{% include "partials/css-project.html" %}
+{% endblock head_extra %}
+
+{% block content -%}
+<h1 class="title">
+    {{ page.title }}
+</h1>
+<article>
+    {{ page.content | safe }}
+
+{% set all_projects = get_taxonomy(kind="project") %}
+
+<section class="list">
+{% set first = true %}
+{% for project in all_projects.items | sort(attribute="pages.0.date") | reverse %}
+{%- set page_exists = load_data(path="projects/"~project.slug~".md", required=false) -%}
+{% if page_exists %}
+{% set page = get_page(path="projects/"~project.slug~".md") %}
+{% if page.extra and page.extra.apps %}
+{% for app in page.extra.apps %}
+{% if not first %}<hr>{% endif %}
+{% set_global first = false %}
+{{ projects::summary(name=project.name, app_page=true, app_index=loop.index0) }}
+{% endfor %}
+{% endif %}
+{% endif %}
+{% endfor -%}
+</section>
+
+</article>
+{% endblock content %}
