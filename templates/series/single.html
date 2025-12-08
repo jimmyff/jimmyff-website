@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "macros/images.html" as images %}
 
 {% block head_extra %}
 <style>
@@ -20,8 +21,7 @@
   {% for post in posts %}
   <li>
     {% if post.extra.images %}
-    {% set img = resize_image(path=post.path ~ post.extra.images[0], op="fit_width", width=320, format=config.extra.image_format, quality=70) %}
-    <a href="{{ post.permalink | safe }}"><img src="{{ img.url }}" alt="{{ post.title }}"></a>
+    <a href="{{ post.permalink | safe }}">{{ images::responsive_thumbnail(path=post.path, src=post.extra.images[0], alt=post.title, default_size=320, sizes=[320, 640, 1024]) }}</a>
     {% endif %}
     <div class="d">
       <div><a href="{{ post.permalink | safe }}">{{ post.title }}</a>{% if post.draft %} (Draft){% endif %}</div>
