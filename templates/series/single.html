@@ -15,7 +15,11 @@
 
 <h1>{{taxonomy.name | capitalize }} &raquo; {{ term.name | capitalize }}</h1>
 
-{% for year, posts in term.pages | sort(attribute="date") | group_by(attribute="year") %}
+{% set sorted_pages = term.pages | sort(attribute="date") %}
+<p>There are {{ sorted_pages | length }} entries in this series, the first on {{ sorted_pages | first | get(key="date") | date(format="%d %B %Y") }} and the most recent on {{ sorted_pages | last | get(key="date") | date(format="%d %B %Y") }}.</p>
+
+{% for year, posts in sorted_pages | group_by(attribute="year") %}
+<hr>
 <h2>{{ year }}</h2>
 <ul class="sr">
   {% for post in posts %}

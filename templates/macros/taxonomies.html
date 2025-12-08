@@ -30,8 +30,8 @@
 
 {% macro url(taxonomy, term) -%}
 {% set taxonomies = get_taxonomy(kind=taxonomy) -%}
-{% for tax in taxonomies.items | filter(attribute="name", value=term) -%}
-{{tax.permalink }}
+{% for tax in taxonomies.items | filter(attribute="slug", value=term | slugify) -%}
+{{ tax.permalink }}
 {% endfor -%}
 {% endmacro url %}
 

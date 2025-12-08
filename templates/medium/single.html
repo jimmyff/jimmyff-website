@@ -2,9 +2,13 @@
 
 {% block content %}
 
-<h1><a href="{{ get_url(path='gallery',trailing_slash=false)|safe}}">Gallery</a> &raquo; {{ term.name | capitalize }}</h1>
+<h1><a href="{{ get_url(path='gallery')|safe}}">Gallery</a> &raquo; {{ term.name | capitalize }}</h1>
 
-{% for year, posts in term.pages | group_by(attribute="year") %}
+{% set sorted_pages = term.pages | sort(attribute="date") %}
+<p>There are {{ sorted_pages | length }} entries, the first on {{ sorted_pages | first | get(key="date") | date(format="%d %B %Y") }} and the most recent on {{ sorted_pages | last | get(key="date") | date(format="%d %B %Y") }}.</p>
+
+{% for year, posts in sorted_pages | group_by(attribute="year") %}
+<hr>
 <h2>{{ year }}</h2>
 <div class="g">
 {% for post in posts %}
