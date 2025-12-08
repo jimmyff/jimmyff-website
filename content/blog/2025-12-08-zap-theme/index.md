@@ -11,7 +11,7 @@ Ever since I went minimal with my last website theme [Inky](https://www.getzola.
 
 This weekend I finally built [Zap](https://github.com/jimmyff/zola-zap), a minimal theme for the [Zola](https://www.getzola.org/) static site generator. It's designed to be as minimal as possible while still being functional: light/dark mode toggle, optional inline SVG icons via a sprite sheet, responsive images, and vibrant [OKLCH](/blog/prism-dart-flutter-color-package/) colors. The entire base CSS is inlined in the HTML—no external stylesheet requests. I also replaced the old search index with Fuse.js, which generates a significantly smaller index.
 
-I've also taken the opportunity to switch to [Umami](https://umami.is/) for analytics. It's privacy-focused, lightweight, and doesn't require cookie banners. A nice change from the usual suspects.
+I took the opportunity to switch to [Umami](https://umami.is/) for analytics. It's privacy-focused, lightweight, and doesn't require cookie banners. A nice change from the usual suspects.
 
 Looking forward to publishing more content on my shiny refreshed site in 2026!
 
