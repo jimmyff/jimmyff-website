@@ -3,13 +3,12 @@ title = "Making a Lego kirby artwork"
 date = 2023-01-10
 draft =  false
 [taxonomies]
-tags = ["art", "nintendo"]
+tags = ["art", "nintendo", "lego"]
 medium = []
 series = []
 [extra]
 images= ["kirby-shrine.webp"]
 +++
-
 
 {{ image(class="framed", src="dots.webp", alt="Neatly sorted Lego dots!") }}
 

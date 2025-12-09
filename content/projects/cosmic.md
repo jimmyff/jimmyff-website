@@ -4,7 +4,7 @@ description = "Decoding the Stars with AI: My Journey into Astrological App Deve
 date = 2024-06-14
 draft =  false
 [taxonomies]
-tags = []
+tags = ["astrology", "ai", "lang-dart", "flutter"]
 medium = []
 series = []
 [extra]
@@ -15,4 +15,3 @@ images= []
 emoji ="🌠"
 created = 2024-06-14
 +++
-

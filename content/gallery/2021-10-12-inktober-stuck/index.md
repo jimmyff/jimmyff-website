@@ -3,7 +3,7 @@ title = "Stuck, 12/31, Inktober 2021"
 date = 2021-10-12
 draft =  false
 [taxonomies]
-tags = ["inktober","art"]
+tags = ["inktober","art","gaming-tabletop"]
 medium = ["Digital"]
 series = ["Inktober 2021"]
 [extra]

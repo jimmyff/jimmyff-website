@@ -3,7 +3,7 @@ title= "Crypto Clock - the crypto currency ticker that runs on an old Kindle"
 date= 2021-07-22
 draft= false
 [taxonomies]
-tags= ["coding", "lang-dart"]
+tags= ["coding", "lang-dart", "hardware"]
 project = ["Crypto Clock"]
 +++
 

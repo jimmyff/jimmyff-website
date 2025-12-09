@@ -3,7 +3,7 @@ title = "Nest 09/31, Inktober 2022"
 date = 2022-10-09
 draft =  false
 [taxonomies]
-tags = ["inktober", "art", "dog"]
+tags = ["inktober", "art", "dog", "elphaba"]
 medium = ["Digital"]
 series = ["Inktober 2022"]
 [extra]

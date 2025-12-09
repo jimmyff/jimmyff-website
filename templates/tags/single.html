@@ -1,39 +1,22 @@
 {% extends "base.html" %}
+{% import "macros/projects.html" as projects %}
 
 {% block content %}
 
-<h1>{{ term.name }}</h1>
+<h1>Tags &raquo; {{ term.name | capitalize }}</h1>
+
+{% set sorted_pages = term.pages | sort(attribute="date") | reverse %}
+<p>There are {{ sorted_pages | length }} entries for this tag, the first on {{ sorted_pages | last | get(key="date") | date(format="%d %B %Y") }} and the most recent on {{ sorted_pages | first | get(key="date") | date(format="%d %B %Y") }}.</p>
 
 <article>
 
-{# <code>    {{ term | json_encode(pretty=true) }}</code> #}
-
-
-{# <code>    {{ posts | json_encode(pretty=true) }}</code> #}
-
-{#  #}
-{% set posts_filtered = term  %} 
-
-{# <code>    {{ posts_filtered | json_encode(pretty=true) }}</code> #}
-
-
-{% set gallery_posts = posts_filtered.pages | filter (attribute="components.0", value="gallery")  %} 
-{% set blog_posts = posts_filtered.pages | filter (attribute="components.0", value="blog")  %} 
-
-{# 
-gallery
-<code>    {{ gallery_posts | json_encode(pretty=true) }}</code>
-
-blog
-<code>    {{ blog_posts | json_encode(pretty=true) }}</code> #}
-
-
-{% for year, posts in posts_filtered.pages | group_by(attribute="year") %}
+{% for year, posts in sorted_pages | group_by(attribute="year") %}
 <hr>
 <h2>{{ year }}</h2>
 
 {% set gallery_posts = posts | filter (attribute="components.0", value="gallery") %}
 {% set blog_posts = posts | filter (attribute="components.0", value="blog") %}
+{% set project_posts = posts | filter (attribute="components.0", value="projects") %}
 
 {% if gallery_posts | length > 0 %}
 <div class="g">
@@ -61,6 +44,25 @@ blog
   </li>
   {% endfor %}
 </ul>
+{% endif -%}
+
+{% if (gallery_posts | length > 0 or blog_posts | length > 0) and project_posts | length > 0 %}
+<hr>
+{% endif -%}
+
+{% if project_posts | length > 0 %}
+{% for post in project_posts %}
+<div style="margin-bottom:1.5rem">
+  <h3>Project &raquo; {% if post.extra.emoji %}{{ post.extra.emoji }}{% else %}💡{% endif %} <a href="{{ post.permalink | safe }}">{{ post.title }}</a>{% if post.draft %} (Draft){% endif %}</h3>
+  <div style="display:flex;gap:1rem">
+    {% if post.extra.cover %}<a href="{{ post.permalink | safe }}" style="width:2.5rem">{{ images::responsive_thumbnail(path="@", src=post.extra.cover, alt=post.title, default_size=48, sizes=[48,96]) }}</a>{% endif %}
+    <div style="flex:1">
+      {% if post.description %}<p class="s" style="margin:0">{{ post.description }}</p>{% endif %}
+      {% if post.taxonomies.tags %}<ul class="tags s">{% for tag in post.taxonomies.tags %}<li><a href="/tags/{{ tag | slugify }}/">{{ tag }}</a></li>{% endfor %}</ul>{% endif %}
+    </div>
+  </div>
+</div>
+{% endfor %}
 {% endif -%}
 {% endfor %}
 

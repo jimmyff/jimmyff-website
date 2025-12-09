@@ -15,3 +15,7 @@ images= ["spirit.webp"]
 I love the shape of this Japanese Whisky bottle.
 
 Source: from life.
+
+---
+
+_Update: I've [painted this bottle again](/gallery/still-life-whisky/) in oil._

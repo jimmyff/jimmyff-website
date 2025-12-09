@@ -3,7 +3,7 @@ title = "Launching the next generation of my dating apps"
 date = 2022-12-03
 draft =  false
 [taxonomies]
-tags = ["coding", "project-dating", "lang-dart", "flutter"]
+tags = ["coding", "lang-dart", "flutter"]
 medium = []
 series = []
 project = ["Dating"]

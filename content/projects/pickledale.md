@@ -4,7 +4,7 @@ description = "Combining two things I love: Boardgames and Yoga! Ohh, and mice, 
 date = 2023-10-01
 draft =  false
 [taxonomies]
-tags = ["gamedesign"]
+tags = ["tabletop-game-design"]
 medium = []
 series = []
 [extra]
@@ -12,4 +12,3 @@ images= []
 emoji ="🐭"
 # cover = ""
 +++
-

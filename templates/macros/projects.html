@@ -82,14 +82,12 @@
         <p class="s">📱 <a href="{{ app.google }}">Google Play</a> · <a href="{{ app.apple }}">Apple</a>{% if app.website %} · <a href="{{ app.website }}">Web</a>{% endif %}</p>
         {% endif -%}
 
-        {% if onpage %}
         {% if page and page.taxonomies and page.taxonomies["tags"] -%}
         <ul class="tags s">
             {% for tag in page.taxonomies["tags"] %}
               <li><a href='{{ config.base_url | safe }}/tags/{{ tag | slugify }}'>{{ tag }}</a></li>
             {% endfor %}
         </ul>
-        {% endif -%}
         {% endif -%}
 
         {% if not onpage and not hide_link -%}

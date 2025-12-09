@@ -3,14 +3,13 @@ title = "Next generation dating apps are live"
 date = 2023-07-06
 draft =  false
 [taxonomies]
-tags = ["project-dating","coding", "lgbtqi+"]
+tags = ["coding", "lgbtqi+"]
 medium = []
 series = []
 project = ["Dating"]
 [extra]
 images= []
 +++
-
 
 {{ image(class="framed", src="apple-apps.webp", alt="App Store Apps ready for sale!") }}
 
