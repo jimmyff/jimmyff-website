@@ -7,40 +7,42 @@ in_search_index = true
 
 # Welcome! 👋
 
-Hello & welcome! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an [obsessive creator](/projects/), an [avid gamer](/games/), and a fun loving [dog dad](/tags/elphaba/). Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (_[see blog](/blog/)_). This website is first and foremost for me, it serves as a little diary which gives me a bit of record of the stuff I was up to many moons ago!
+Hello & welcome! [I'm Jimmy](/series/self-portraits), a 90's teen that never really grew up. I'm an [obsessive creator](/projects/), an [avid gamer](/games/), and a fun loving [dog dad](/tags/elphaba/). Befitting my favorite era, this is my little den on the internet (don't forget to sign my [guestbook](/guestbook/) ;). Herein you will find some of my projects and a bit of an insight in to my scatterbrain (_[see blog](/blog/)_). This website is first and foremost for me, it serves as a little diary which gives me a bit of record of the stuff I was up to many moons ago!
 
 ---
 
 ## Analogue & digital gaming
 
-Gaming is one of my cornerstones, probably as I find non-interactive activities pretty boring! I love [table top gaming](/games) as a way of gathering friends and family around a table and having a great joint experience (feel free to [connect on BoardGameGeek](https://boardgamegeek.com/user/jimmyff)). I love to [design board games](/tags/tabletop-game-design/) and I've dabbled with [video game development](/tags/gamedev-digital) too. I'm a passionate gamer although I don't get much time for video games these days but I remain a die hard [Nintendo](/tags/nintendo) fan-boy.
+Gaming is one of my cornerstones, probably as I find non-interactive activities pretty boring! I love [table top gaming](/games/) as a way of gathering friends and family around a table and having a great joint experience (feel free to [connect on BoardGameGeek](https://boardgamegeek.com/user/jimmyff)). I love to [design board games](/tags/tabletop-game-design/) and I've dabbled with [video game development](/tags/gamedev-digital) too. I'm a passionate gamer although I don't get much time for video games these days but I remain a die hard [Nintendo](/tags/nintendo) fan-boy.
 
 ---
 
 ## Coding & technology
 
-You can find my public projects over on my [Github profile](https://github.com/jimmyff/). I'm always creating something new! My main language is [Dart](/tags/lang-dart), I'm in love with the Flutter framework. I'm also trying to level up my [Rust](/tags/lang-rust) skills. I'm a big fan of serveless technology and my preferred backend is Google Cloud.
+You can find my public projects over on my [Github profile](https://github.com/jimmyff/). I'm always creating something new! My main language is [Dart](/tags/lang-dart), I'm in love with the Flutter framework. I'm also trying to level up my [Rust](/tags/lang-rust) skills. I'm a big fan of serverless technology and my preferred backend is Google Cloud. Oh and I use [Nix](/tags/nix/) btw.
 
 ---
 
 ## Creative arts
 
-I always some creative endeavour on the go, you can check out the [gallery](/gallery) to see some of the things I've made. Some of the mediums include getting messy with clay doing [ceramics](/medium/ceramic/), playing around with my tablet creating [digital art](/medium/digital/) and making a mess with [oil paints](/medium/oil/). I also enjoy to practice yoga and I usually get involved with the [Inktober](/inktober/) challenge!
+I always have some creative endeavour on the go, you can check out the [gallery](/gallery/) to see some of the things I've made. Some of the mediums include getting messy with clay doing [ceramics](/medium/ceramic/), playing around with my tablet creating [digital art](/medium/digital/) and making a mess with [oil paints](/medium/oil/). I also enjoy to practice yoga and I usually get involved with the [Inktober](/inktober/) challenge!
 
 ---
 
 ## My work & apps
 
-I run a small independant company called Rocketware. Head over to the [apps](/apps) page for more information!
+I run a small independant company called Rocketware. Head over to the [apps](/apps/) page for more information!
 
 ---
 
 ## Get in touch
 
-You can find my [code](https://github.com/jimmyff) on GitHub, my [video's](https://www.youtube.com/@jimmyff-uk) on YouTube, my [random posts](https://bsky.app/profile/faehound.games) and [games posts](https://bsky.app/profile/faehound.games) on BlueSky and my [art](https://www.instagram.com/jimmyff_art/jimmyff_art) on Insta. Aslo feel free to [contact me](https://docs.google.com/forms/d/e/1FAIpQLScIN2i8tudYfvWZO96Ed-_ma011PgZU-CrxRyCXdSA1z9NRjA/viewform) if you want to drop me a message!
+Come sign my [guestbook](/guestbook/) to say hey, or [contact me here](https://docs.google.com/forms/d/e/1FAIpQLScIN2i8tudYfvWZO96Ed-_ma011PgZU-CrxRyCXdSA1z9NRjA/viewform) if you want to send me a DM. For encrypted chat grab my [PGP key](/pgp/).
+
+Find me elsewhere: [GitHub](https://github.com/jimmyff) · [YouTube](https://www.youtube.com/@jimmyff-uk) · [BlueSky](https://bsky.app/profile/jimmyff.co.uk) · [BlueSky (Game Dev)](https://bsky.app/profile/faehound.games) · [Mastodon](https://fosstodon.org/@jimmyff) · [Instagram](https://www.instagram.com/jimmyff_art/) · [BoardGameGeek](https://boardgamegeek.com/user/jimmyff)
 
 ---
 
 ## About this site
 
-This site has been lovingly created in markdown and generated by [Zola](https://getzola.org/) -a wonderfully simple Rust based static site generator. I've published my theme is [Zap](https://github.com/jimmyff/zola-zap) over on GitHub. The site is also hosted on Github pages and generated in a Github action.
+This site has been lovingly created in markdown and generated by [Zola](https://getzola.org/) -a wonderfully simple Rust based static site generator. I've published my theme [Zap](https://github.com/jimmyff/zola-zap) over on GitHub. The site is also hosted on Github pages and generated in a Github action.
