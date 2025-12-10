@@ -3,7 +3,7 @@ title = "Pop Snap Mega Update"
 date = 2025-04-17
 draft =  false
 [taxonomies]
-tags = ["lang-dart", "coding", "flutter"]
+tags = ["lang-dart", "coding", "flutter", "ai"]
 medium = []
 series = []
 project = ["Stickers"]

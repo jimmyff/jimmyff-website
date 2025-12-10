@@ -3,13 +3,12 @@ title = "Introducing Kosmos // Gemini API Developer Competition Submission"
 date = 2024-08-11
 draft =  false
 [taxonomies]
-tags = ["lang-dart", "coding", "flutter", "astrology"]
+tags = ["lang-dart", "coding", "flutter", "astrology", "ai"]
 medium = []
 series = []
 project = ["Cosmic"]
 [extra]
 images= []
-
 +++
 
 {{ youtube(id="a98ePlYomUs ") }}

@@ -3,7 +3,7 @@ title = "Announcing Kosmos! // Dev Log 2"
 date = 2024-07-24
 draft =  false
 [taxonomies]
-tags = ["lang-dart", "coding", "flutter", "astrology"]
+tags = ["lang-dart", "coding", "flutter", "astrology", "ai"]
 medium = []
 series = []
 project = ["Cosmic"]

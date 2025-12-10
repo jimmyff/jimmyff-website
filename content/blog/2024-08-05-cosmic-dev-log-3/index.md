@@ -3,13 +3,12 @@ title = "Ai, Astrology and Clocks, oh my! // Dev Log 3"
 date = 2024-08-05
 draft =  false
 [taxonomies]
-tags = ["lang-dart", "coding", "flutter", "astrology"]
+tags = ["lang-dart", "coding", "flutter", "astrology", "ai"]
 medium = []
 series = []
 project = ["Cosmic"]
 [extra]
 images= ["icon.webp"]
-
 +++
 
 _Woo, so here we are, Dev Log 3. I said this was going to be a big AI update and wow, I've been blown away by the results I've managed to get with [Gemini](https://ai.google.dev/)!_
