@@ -19,7 +19,7 @@ Gaming is one of my cornerstones, probably as I find non-interactive activities 
 
 ## Coding & technology
 
-You can find my public projects over on my [Github profile](https://github.com/jimmyff/). I'm always creating something new! My main language is [Dart](/tags/lang-dart), I'm in love with the Flutter framework. I'm also trying to level up my [Rust](/tags/lang-rust) skills. I'm a big fan of serverless technology and my preferred backend is Google Cloud. Oh and I use [Nix](/tags/nix/) btw.
+You can find my public projects over on my [Github profile](https://github.com/jimmyff/). I'm always creating something new! My main language is [Dart](/tags/lang-dart), I'm in love with the Flutter framework. I'm also trying to level up my [Rust](/tags/lang-rust) skills. I'm a big fan of serverless technology and my preferred backend is Google Cloud. Oh and I use [Nix](/tags/nix/) btw ([my nixfiles](https://github.com/jimmyff/nixfiles)).
 
 ---
 
