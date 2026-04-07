@@ -39,9 +39,10 @@ taxonomies = [
 index_format = "fuse_javascript"
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+
+[markdown.highlighting]
+light_theme = "github-light"
+dark_theme = "github-dark"
 
 
 [extra]
