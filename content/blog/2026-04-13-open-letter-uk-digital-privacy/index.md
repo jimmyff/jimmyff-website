@@ -1,9 +1,8 @@
 +++
 title = "An open letter to the UK Government on digital privacy"
 date = 2026-04-13
-draft = true
 [taxonomies]
-tags = ["privacy", "politics"]
+tags = ["privacy"]
 +++
 
 > Privacy isn't about having something to hide. It's about having the right to choose what you share, with whom, and when.
@@ -20,13 +19,13 @@ The country has rejected national ID cards twice in a generation. Once under Ton
 
 This isn't a hypothetical future. It is happening now, in Britain, today - and it is escalating fast.
 
-In July 2025, the Metropolitan Police installed the UK's first *permanent* live facial recognition cameras in Croydon. The Home Office bought ten new mobile facial recognition vehicles. And under your Crime and Policing Bill, police are about to gain access to the DVLA's database of more than 50 million driving licence photos for biometric scanning - a proposal even the previous Conservative government was forced to abandon under public pressure [^crime-policing-bill]. The House of Lords voted down an amendment to block it in March 2026 [^lords-dvla]. Big Brother Watch found that 89% of police facial recognition alerts in 2023 wrongly identified members of the public as people of interest [^bbw-89]. In *Bridges v South Wales Police* (2020), the Court of Appeal ruled their use of automated facial recognition unlawful [^cnbc-bridges]. None of this has slowed the deployment down.
+In July 2025, the Metropolitan Police installed the UK's first _permanent_ live facial recognition cameras in Croydon. The Home Office bought ten new mobile facial recognition vehicles. And under your Crime and Policing Bill, police are about to gain access to the DVLA's database of more than 50 million driving licence photos for biometric scanning - a proposal even the previous Conservative government was forced to abandon under public pressure [^crime-policing-bill]. The House of Lords voted down an amendment to block it in March 2026 [^lords-dvla]. Big Brother Watch found that 89% of police facial recognition alerts in 2023 wrongly identified members of the public as people of interest [^bbw-89]. In _Bridges v South Wales Police_ (2020), the Court of Appeal ruled their use of automated facial recognition unlawful [^cnbc-bridges]. None of this has slowed the deployment down.
 
 As a software engineer, I see this every day. Software is never perfect and bugs do exist. Security vulnerabilities get overlooked. Supply-chain attacks are happening with increasing frequency. Servers get compromised. Building a mass surveillance apparatus on top of all of this - centralising the most sensitive data of every citizen in the country - is a disaster waiting to happen.
 
 We have already seen what happens when we trust software we shouldn't. Between 1999 and 2015, over 900 British subpostmasters were wrongfully convicted of theft and fraud based on bugs in the Fujitsu Horizon system. At least 13 people took their own lives [^computerweekly-horizon]. The Post Office told subpostmasters they were "the only ones" experiencing problems. The assumption that the computer cannot be wrong meant every discrepancy was blamed on the person, not the software [^economicsobservatory-horizon]. The same logic - trust the algorithm, don't question the system - underpins every automated surveillance tool being deployed today. Horizon took twenty years to expose. AI systems are even more opaque.
 
-And the data feeding all of this - every algorithm, every prediction, every automated decision - is already in the wild. Admiral, one of Britain's largest car insurers, tried to analyse Facebook posts to set premiums [^bbc-admiral]. The global data broker industry is worth around $294 billion [^databroker-market]; California's data broker registry alone found 33 brokers selling data to North Korea, China, Russia and Iran [^epic-brokers]. In November 2025, the *Databroker Files* investigation found mobile location data from hundreds of devices at the European Commission, the European Parliament and NATO HQ - all commercially available for purchase [^databroker-files]. Britain's MPs, civil servants and military personnel use the same phones, the same apps, the same brokers.
+And the data feeding all of this - every algorithm, every prediction, every automated decision - is already in the wild. Admiral, one of Britain's largest car insurers, tried to analyse Facebook posts to set premiums [^bbc-admiral]. The global data broker industry is worth around $294 billion [^databroker-market]; California's data broker registry alone found 33 brokers selling data to North Korea, China, Russia and Iran [^epic-brokers]. In November 2025, the _Databroker Files_ investigation found mobile location data from hundreds of devices at the European Commission, the European Parliament and NATO HQ - all commercially available for purchase [^databroker-files]. Britain's MPs, civil servants and military personnel use the same phones, the same apps, the same brokers.
 
 "Anonymous" data isn't anonymous. A Catholic priest in the United States was identified and outed after a religious group bought his location history from a Grindr-linked data broker [^nbc-grindr]. The same techniques work on anyone. They are being applied to everyone.
 
@@ -72,7 +71,7 @@ Seven encrypted messaging services - Signal, WhatsApp, Element, Session, Threema
 
 > An unprecedented threat to the privacy, safety and security of every UK citizen.
 
-Both Signal and WhatsApp would leave the UK rather than comply. The European Court of Human Rights has already ruled, in *Podchasov v. Russia* (2024), that requiring platforms to weaken encryption violates Article 8 - the right to privacy [^echr-podchasov]. The EU's near-identical Chat Control proposal failed when Germany voted against and EU legal advisors concluded it breached EU law [^chatcontrol-failed]. The UK is now an outlier among democratic nations in retaining this power - a point the US Computer & Communications Industry Association made formally to the US Trade Representative, identifying Section 122 as a foreign trade barrier [^ccia-ustr].
+Both Signal and WhatsApp would leave the UK rather than comply. The European Court of Human Rights has already ruled, in _Podchasov v. Russia_ (2024), that requiring platforms to weaken encryption violates Article 8 - the right to privacy [^echr-podchasov]. The EU's near-identical Chat Control proposal failed when Germany voted against and EU legal advisors concluded it breached EU law [^chatcontrol-failed]. The UK is now an outlier among democratic nations in retaining this power - a point the US Computer & Communications Industry Association made formally to the US Trade Representative, identifying Section 122 as a foreign trade barrier [^ccia-ustr].
 
 Jonathan Hall KC, the government's own Independent Reviewer of State Threats Legislation, has warned that developers of apps like Signal could fall within the National Security Act's definition of "hostile activity", because their technology makes surveillance harder [^techradar-hostile]. The same government relies on identical encryption technology for MI6 operations.
 
@@ -80,7 +79,7 @@ More than half a million people have signed a parliamentary petition to repeal t
 
 ---
 
-**The Children's Wellbeing & Schools Bill** is the most cynical of the lot. Child safety is a cause every reasonable person supports - and that is precisely why it has been chosen as the vehicle. Behind a Bill ostensibly about protecting children sits the most aggressive expansion of surveillance powers over *everyone* in this entire programme: it reshapes what every adult in the UK can do online, what software they're allowed to run, and who gets to know who they are [^org-restrict].
+**The Children's Wellbeing & Schools Bill** is the most cynical of the lot. Child safety is a cause every reasonable person supports - and that is precisely why it has been chosen as the vehicle. Behind a Bill ostensibly about protecting children sits the most aggressive expansion of surveillance powers over _everyone_ in this entire programme: it reshapes what every adult in the UK can do online, what software they're allowed to run, and who gets to know who they are [^org-restrict].
 
 **Device-level scanning.** A mandate for "tamper-proof system software" on every smartphone and tablet sold in the UK, scanning for child abuse material [^surveillance-tamper]. Over 500 cryptographers and security researchers across 34 countries condemned the EU's equivalent proposal as "technically infeasible" and a "danger to democracy"; the scientists warned that scanning at scale would trigger a "tsunami of false reports", placing innocent citizens under automatic suspicion [^breyer-scientists]. The mandate would also, in effect, ban open-source mobile operating systems like GrapheneOS and LineageOS - the most secure, privacy-respecting phone options available to British citizens.
 
@@ -88,7 +87,7 @@ More than half a million people have signed a parliamentary petition to repeal t
 
 **A social media ban for under-16s** (Lords voted 261-150) [^commons-social]. A study of 355,000+ young people found technology's association with wellbeing was negative but small, "too small to warrant policy change", explaining at most 0.4% of the variation in wellbeing [^orben-przybylski]. Australia's version took effect in December 2025; within three months, 70% of under-16s who had accounts on Instagram, Snapchat or TikTok had maintained access [^guardian-aus].
 
-**Age verification.** Here is the bit I find genuinely frightening, and the bit nobody seems willing to talk about: age-restricting the internet means *every adult* has to identify themselves to use it. Universal identity disclosure, just to read the news or talk to your friends. Imagine scanning your government ID everywhere you go - every shop, every conversation, every journey. That's what this is, but digital.
+**Age verification.** Here is the bit I find genuinely frightening, and the bit nobody seems willing to talk about: age-restricting the internet means _every adult_ has to identify themselves to use it. Universal identity disclosure, just to read the news or talk to your friends. Imagine scanning your government ID everywhere you go - every shop, every conversation, every journey. That's what this is, but digital.
 
 Centralised identity stores are massive breach targets, and the track record is already dismal. AU10TIX, an age verification vendor used by TikTok, Uber and X, left admin credentials exposed for over a year, leaking millions of facial images, driver's licences and ID numbers [^eff-au10tix]. Discord lost 70,000+ government-issued IDs in a single hack, with the attackers attempting to extort a financial ransom [^nbc-discord]. Over 400 security and privacy scientists have signed an open letter warning against deployment [^adguard-letter].
 
@@ -96,7 +95,7 @@ There are well-understood technical solutions to all of this. Zero-knowledge pro
 
 ---
 
-**GDPR is being gutted.** Our strongest privacy framework is being dismantled from within. In Europe, the "Digital Omnibus" package has been called "the biggest rollback of digital fundamental rights in EU history" by 127 civil society organisations [^noyb-open-letter]. The effect is to shift power further toward the tech companies that profit from harvesting our data, and to reduce what we can hold them accountable for. The UK is going further still. The Data (Use and Access) Act 2025 relaxed cookie consent, loosened automated decision-making rules, and - remarkably - removed your *right* to complain to the data protection regulator. You "may" complain now [^uk-dua-act]. And tucked into the Children's Bill, Amendment 38B grants the Secretary of State power to modify *any provision* in UK data protection law by ministerial order [^org-38b].
+**GDPR is being gutted.** Our strongest privacy framework is being dismantled from within. In Europe, the "Digital Omnibus" package has been called "the biggest rollback of digital fundamental rights in EU history" by 127 civil society organisations [^noyb-open-letter]. The effect is to shift power further toward the tech companies that profit from harvesting our data, and to reduce what we can hold them accountable for. The UK is going further still. The Data (Use and Access) Act 2025 relaxed cookie consent, loosened automated decision-making rules, and - remarkably - removed your _right_ to complain to the data protection regulator. You "may" complain now [^uk-dua-act]. And tucked into the Children's Bill, Amendment 38B grants the Secretary of State power to modify _any provision_ in UK data protection law by ministerial order [^org-38b].
 
 ## The approach is wrong
 
@@ -106,9 +105,9 @@ None of this comes from people who understand the technology. The government is 
 
 Your response? Press on regardless.
 
-I genuinely don't know whether your government understands what it's building. Either the Home Office doesn't grasp that banning VPNs, mandating device scanning and requiring universal identity checks demolishes privacy for everyone - in which case, nobody competent was consulted. Or it does understand, and this is deliberate. *I'm not sure which is worse.* Either way, the infrastructure is the same, and the next government inherits all of it.
+I genuinely don't know whether your government understands what it's building. Either the Home Office doesn't grasp that banning VPNs, mandating device scanning and requiring universal identity checks demolishes privacy for everyone - in which case, nobody competent was consulted. Or it does understand, and this is deliberate. _I'm not sure which is worse._ Either way, the infrastructure is the same, and the next government inherits all of it.
 
-Regulate what platforms *do* - addictive design, algorithmic amplification, deceptive practices, data harvesting - and hold them accountable as custodians of the sensitive data they collect. Rather than surveilling everyone to control who can *access* the internet, make companies responsible for how they handle the data of those who already use it. Hold platforms accountable for the systems they build, not citizens for the tools they use to defend themselves.
+Regulate what platforms _do_ - addictive design, algorithmic amplification, deceptive practices, data harvesting - and hold them accountable as custodians of the sensitive data they collect. Rather than surveilling everyone to control who can _access_ the internet, make companies responsible for how they handle the data of those who already use it. Hold platforms accountable for the systems they build, not citizens for the tools they use to defend themselves.
 
 The UK should be going in the opposite direction. Every conversation, every file, every connection - encrypted by default, all of the time. Not because we have something to hide, but because bugs in software are inevitable, servers get compromised, and the next person to abuse this infrastructure may not be the one you trust today. Banning encryption doesn't make us safer. It strips the armour off every citizen and hands the keys to whoever happens to have them next - government, criminal, or both.
 
@@ -143,57 +142,97 @@ Prime Minister; until this changes, I'm afraid you and the Labour party no longe
 ---
 
 [^crime-policing-bill]: [Computer Weekly: Driving licence data could be used for police facial recognition](https://www.computerweekly.com/news/366620582/Driving-licence-data-could-be-used-for-police-facial-recognition)
+
 [^lords-dvla]: [Biometric Update: UK Lords reject bid to block police facial recognition searches of DVLA database](https://www.biometricupdate.com/202603/uk-lords-reject-bid-to-block-police-facial-recognition-searches-of-dvla-database)
+
 [^bbw-89]: [Hansard: Facial Recognition (Police Use) debate, 13 Nov 2024 — citing Big Brother Watch](https://hansard.parliament.uk/commons/2024-11-13/debates/E334DF95-2313-4AAC-AA25-D34F8F7C8DD5/FacialRecognitionPoliceUse)
+
 [^cnbc-bridges]: [CNBC: UK court finds facial recognition used by police was unlawful](https://www.cnbc.com/2020/08/11/swp-facial-recognition-unlawful.html)
+
 [^computerweekly-horizon]: [Computer Weekly: Post Office Horizon scandal explained](https://www.computerweekly.com/feature/Post-Office-Horizon-scandal-explained-everything-you-need-to-know)
+
 [^economicsobservatory-horizon]: [Economics Observatory: Trust and technology - what went wrong with the Post Office?](https://www.economicsobservatory.com/trust-and-technology-what-went-wrong-with-the-post-office)
+
 [^bbc-admiral]: [BBC: Facebook blocks Admiral's car insurance discount plan](https://www.bbc.co.uk/news/business-37847647)
+
 [^databroker-market]: [University of Chicago Law Review: citing Mordor Intelligence estimate of $294.27B for 2025](https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=6434&context=uclrev)
+
 [^epic-brokers]: [EPIC: Data Brokers Selling US Data to Foreign Actors](https://epic.org/the-33-data-brokers-selling-us-data-to-foreign-actors-according-to-california/)
+
 [^databroker-files]: [Netzpolitik.org: Databroker Files - Targeting the EU](https://netzpolitik.org/2025/databroker-files-targeting-the-eu/)
+
 [^nbc-grindr]: [NBC News: Priest outed via Grindr app highlights rampant data tracking](https://www.nbcnews.com/tech/security/priest-outed-grindr-app-highlights-rampant-data-tracking-rcna1493)
 
 [^privacyguides-adp]: [Privacy Guides: The UK Government Forced Apple to Remove Advanced Data Protection](https://www.privacyguides.org/articles/2025/02/28/uk-forced-apple-to-remove-adp/)
+
 [^register-apple]: [The Register: Apple takes UK to court over 'backdoor' order](https://www.theregister.com/2025/03/05/apple_reportedly_ipt_complaint/)
+
 [^anthropic-pentagon]: [The Guardian: Anthropic and Pentagon face off in court over ban on company's AI model](https://www.theguardian.com/us-news/2026/mar/24/anthropic-pentagon-lawsuit)
 
 [^liberty-ipa]: [Liberty: Snoopers' Charter](https://www.libertyhumanrights.org.uk/fundamental/mass-surveillance-snoopers-charter/)
+
 [^article19-ipa]: [The Guardian: Press freedom at all-time low (citing Article 19, 2017)](https://www.theguardian.com/media/2017/nov/30/press-freedom-at-all-time-low-journalist-safety-article-19-v-dem-study)
+
 [^liberty-legal-challenge]: [Amnesty International: Europe's top court rules UK mass surveillance regime violated human rights, 25 May 2021](https://www.amnesty.org/en/latest/press-release/2021/05/uk-surveillance-gchq-ecthr-ruling/)
+
 [^pi-fiveeyes]: [NDR: Snowden Interview Transcript, 26 Jan 2014](https://web.archive.org/web/20140128224438/http://www.ndr.de/ratgeber/netzwelt/snowden277_page-2.html)
 
 [^bbc-osa-encrypt]: [BBC: Signal would 'walk' from UK if Online Safety Bill undermined encryption](https://www.bbc.co.uk/news/technology-64584001)
+
 [^ccia-ustr]: [CCIA: Comments Regarding Foreign Trade Barriers to U.S. Exports for 2026 Reporting (pp. 247-248)](https://downloads.regulations.gov/USTR-2025-0016-0053/attachment_1.pdf)
+
 [^bugs-pockets]: [Abelson, Anderson, Schneier et al.: "Bugs in our Pockets" (Journal of Cybersecurity, 2024)](https://academic.oup.com/cybersecurity/article/10/1/tyad020/7457370)
+
 [^9to5mac-csam]: [9to5Mac: Apple finally admits the CSAM scanning flaw we all pointed out](https://9to5mac.com/2023/09/01/csam-scanning-flaw/)
+
 [^whatsapp-open-letter]: [WhatsApp: An open letter (joint from 7 encrypted messaging services)](https://blog.whatsapp.com/an-open-letter)
+
 [^echr-podchasov]: [Oxford Human Rights Hub: The ECtHR in Podchasov v. Russia - Preserving Encryption](https://ohrh.law.ox.ac.uk/the-ecthr-in-podchasov-v-russia-preserving-encryption-and-denying-backdoors/)
+
 [^chatcontrol-failed]: [Chat Control proposal fails again after massive public opposition](https://andreafortuna.org/2025/11/01/chat-control-proposal-fails-again-after-massive-public-opposition/)
+
 [^techradar-hostile]: [TechRadar: Creating apps like Signal could be 'hostile activity,' claims UK watchdog](https://www.techradar.com/vpn/vpn-privacy-security/creating-apps-like-signal-or-whatsapp-could-be-hostile-activity-claims-uk-watchdog)
+
 [^petition-repeal]: [UK Parliament Petition 722903: Repeal the Online Safety Act (550,000+ signatures)](https://petition.parliament.uk/petitions/722903)
 
 [^org-restrict]: [Open Rights Group: MPs give ministers powers to restrict entire Internet](https://www.openrightsgroup.org/press-releases/mps-give-ministers-powers-to-restrict-entire-internet/)
+
 [^surveillance-tamper]: [State of Surveillance: UK Lords Vote to Ban VPNs for Minors, Mandate Device Surveillance Software](https://stateofsurveillance.org/articles/government/uk-lords-vpn-ban-surveillance-software-2026/)
+
 [^breyer-scientists]: [Patrick Breyer MEP: 500+ Top Scientists Urge Rejection of Chat Control](https://www.patrick-breyer.de/en/danger-to-democracy-500-top-scientists-urge-eu-governments-to-reject-technically-infeasible-chat-control/)
+
 [^ispreview-vpn]: [ISPreview: House of Lords Votes to Ban UK Children from Using Internet VPNs](https://www.ispreview.co.uk/index.php/2026/01/house-of-lords-votes-to-ban-uk-children-from-using-internet-vpns.html)
+
 [^freedomhouse-vpn]: [Freedom House: Authoritarians Expand Restrictions on Virtual Private Networks](https://freedomhouse.org/article/another-door-closes-authoritarians-expand-restrictions-virtual-private-networks)
+
 [^decoded-vpn]: [decoded.legal: VPN age verification - legal and technical analysis](https://decoded.legal/blog/2025/12/a-proposed-legislative-amendment-to-attempt-to-compel-vpn-services-providers-to-prevent-anyone-under-18-in-the-uk-from-using-their-vpns/)
+
 [^eff-vpnban]: [EFF: Lawmakers Want to Ban VPNs - And They Have No Idea What They're Doing](https://www.eff.org/deeplinks/2025/11/lawmakers-want-ban-vpns-and-they-have-no-idea-what-theyre-doing)
+
 [^commons-social]: [House of Commons Library: Proposals to ban social media for children](https://commonslibrary.parliament.uk/research-briefings/cbp-10468/)
+
 [^orben-przybylski]: [Orben & Przybylski: The association between adolescent well-being and digital technology use (Nature Human Behaviour, 2019)](https://www.nature.com/articles/s41562-018-0506-1)
+
 [^guardian-aus]: [The Guardian: Two-thirds of under-16s kept access despite Australia's social media ban, 31 Mar 2026](https://www.theguardian.com/australia-news/2026/mar/31/meta-tiktok-snapchat-google-under-investigation-australia-social-media-ban)
+
 [^eff-au10tix]: [EFF: Hack of Age Verification Company Shows Privacy Danger of Social Media Laws](https://www.eff.org/deeplinks/2024/06/hack-age-verification-company-shows-privacy-danger-social-media-laws)
+
 [^nbc-discord]: [NBC News: 70,000 government ID photos exposed in Discord user hack](https://www.nbcnews.com/tech/tech-news/70000-government-id-photos-exposed-discord-user-hack-rcna236714)
+
 [^adguard-letter]: [AdGuard: 400+ privacy researchers warn against mandatory age verification](https://adguard-vpn.com/en/blog/age-verification-privacy-experts-open-letter.html)
+
 [^zkp]: [Wikipedia: Zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof)
+
 [^org-38b]: [ORG: Analysis of Amendment 38B - Children's Wellbeing and Schools Bill](https://www.openrightsgroup.org/publications/childrens-wellbeing-and-schools-bill-org-analysis-of-amendment-38-b/)
 
 [^noyb-open-letter]: [noyb: 127 organisations sign open letter on Digital Omnibus](https://noyb.eu/en/open-letter-digital-omnibus-brings-deregulation-not-simplification)
+
 [^uk-dua-act]: [Data Protection Report: UK Data (Use and Access) Act 2025](https://www.dataprotectionreport.com/2025/07/uk-data-protection-reform-what-you-need-to-know-and-do/)
 
 [^mic-snowden]: [Mic: In One Quote, Snowden Destroyed the Biggest Myth About Privacy](https://www.mic.com/articles/119602/in-one-quote-edward-snowden-summed-up-why-our-privacy-is-worth-fighting-for)
 
 [^labourhub-shrewsbury]: [Labour Hub: The 1972 Building Workers' Strike](https://labourhub.org.uk/2022/10/20/the-1972-building-workers-strike/)
+
 [^tribune-spycops]: [Tribune: Police Infiltration of Unions](https://tribunemag.co.uk/2023/02/spycops-scandal-inquiry-undercover-policing-trade-unions-infiltration-blacklisting)
+
 [^canary-spycops]: [Hansard: Blacklisting debate, 23 Jan 2013](https://hansard.parliament.uk/commons/2013-01-23/debates/13012356000001/Blacklisting)
