@@ -1,6 +1,6 @@
 +++
 title = "An open letter to the UK Government on digital privacy"
-description = "I'm a software engineer and 20-year Labour member, and this is an open letter to the PM warning that the UK is on a dangerous trajectory. I genuinely don't know if the Home Office grasps that banning VPNs, mandating device scanning , and requiring universal identity checks demolishes privacy for everyone -or if this is deliberate. This is my attempt to ask them to reconsider and start listening to the technical community."
+description = "I'm a software engineer and 20-year Labour member, and this is an open letter to the PM warning that the UK is on a dangerous trajectory. I genuinely don't know if the Home Office grasps that banning VPNs, mandating device scanning, and requiring universal identity checks demolishes privacy for everyone -or if this is deliberate. This is my attempt to ask them to reconsider and start listening to the technical community."
 date = 2026-04-13
 [taxonomies]
 tags = ["privacy"]
@@ -14,7 +14,7 @@ Dear Prime Minister,
 
 I'm a software engineer. I joined the Labour party over twenty years ago, in my teens. I'm writing to tell you that you and your government are dismantling the digital privacy of every citizen in the United Kingdom - and that, as things stand, you and the Labour party no longer have my support.
 
-The country has rejected national ID cards twice in a generation. Once under Tony Blair. Once under you, just months ago. The message could not be clearer. And yet here you are, building something far more invasive than the scheme we already rejected - twice. I don't know whether your government fully understands what these proposals mean for the privacy of every person in this country. This letter is my attempt to highlight these issues to you, before it's too late.
+The country has rejected national ID cards twice in a generation - once under Tony Blair, once under you. And yet your government is building something far more invasive: mandatory device scanning, VPN bans, broken encryption, and universal identity disclosure just to use the open web. I don't know whether your government fully understands what these proposals mean for the privacy of every person in this country. This letter is my attempt to highlight these issues to you, before it's too late.
 
 ## This is already happening
 
@@ -84,7 +84,7 @@ More than half a million people have signed a parliamentary petition to repeal t
 
 **Device-level scanning.** A mandate for "tamper-proof system software" on every smartphone and tablet sold in the UK, scanning for child abuse material [^surveillance-tamper]. Over 500 cryptographers and security researchers across 34 countries condemned the EU's equivalent proposal as "technically infeasible" and a "danger to democracy"; the scientists warned that scanning at scale would trigger a "tsunami of false reports", placing innocent citizens under automatic suspicion [^breyer-scientists]. The mandate would also, in effect, ban open-source mobile operating systems like GrapheneOS and LineageOS - the most secure, privacy-respecting phone options available to British citizens.
 
-**A VPN ban for under-18s** (Lords voted 207-159) [^ispreview-vpn]. Countries that ban or restrict VPNs: North Korea, Belarus, Turkmenistan, Iraq, China, Russia, Iran, Myanmar, Turkey. The UK would be the first Western democracy on that list [^freedomhouse-vpn]. The amendment doesn't even clearly define what a "virtual private network" is [^decoded-vpn]. Many modern browsers and services already function as VPNs — Apple's iCloud Private Relay, Cloudflare WARP, and encrypted DNS are built into the devices and browsers millions of people use every day. A ban broad enough to capture these would break basic web functionality for everyone. VPNs are a cornerstone privacy tool, and framing them as merely a way to dodge age checks is shallow and misleading [^eff-vpnban]. The basic principle of good security is that you hand over only the information a service actually needs — and opening a random app shouldn't reveal your ISP, your mobile network, or a rough map of where you live. A VPN is how you draw that line.
+**A VPN ban for under-18s** (Lords voted 207-159) [^ispreview-vpn]. Countries that ban or restrict VPNs: North Korea, Belarus, Turkmenistan, Iraq, China, Russia, Iran, Myanmar, Turkey. The UK would be the first Western democracy on that list [^freedomhouse-vpn]. The amendment doesn't even clearly define what a "virtual private network" is [^decoded-vpn]. Many modern browsers and services already function as VPNs - Apple's iCloud Private Relay, Cloudflare WARP, and encrypted DNS are built into the devices and browsers millions of people use every day. A ban broad enough to capture these would break basic web functionality for everyone. VPNs are a cornerstone privacy tool, and framing them as merely a way to dodge age checks is shallow and misleading [^eff-vpnban]. The basic principle of good security is that you hand over only the information a service actually needs - and opening a random app shouldn't reveal your ISP, your mobile network, or a rough map of where you live. A VPN is how you draw that line.
 
 **A social media ban for under-16s** (Lords voted 261-150) [^commons-social]. A study of 355,000+ young people found technology's association with wellbeing was negative but small, "too small to warrant policy change", explaining at most 0.4% of the variation in wellbeing [^orben-przybylski]. Australia's version took effect in December 2025; within three months, 70% of under-16s who had accounts on Instagram, Snapchat or TikTok had maintained access [^guardian-aus].
 
@@ -92,7 +92,7 @@ More than half a million people have signed a parliamentary petition to repeal t
 
 Centralised identity stores are massive breach targets, and the track record is already dismal. AU10TIX, an age verification vendor used by TikTok, Uber and X, left admin credentials exposed for over a year, leaking millions of facial images, driver's licences and ID numbers [^eff-au10tix]. Discord lost 70,000+ government-issued IDs in a single hack, with the attackers attempting to extort a financial ransom [^nbc-discord]. Over 400 security and privacy scientists have signed an open letter warning against deployment [^adguard-letter].
 
-There are well-understood technical solutions to all of this. Zero-knowledge proofs [^zkp] let a service verify that a user is over 18 without ever learning who the user is, where they live, or anything else about them. Nothing to leak, nothing to steal, nothing to subpoena. The mathematics has been settled for decades, and Apple already ships this kind of thing in production. The Home Office hasn't considered it, because the Home Office isn't talking to anyone who builds this stuff for a living.
+There are well-understood technical solutions to all of this. Zero-knowledge proofs [^zkp] let a service verify that a user is over 18 without ever learning who the user is, where they live, or anything else about them. Nothing to leak, nothing to steal, nothing to subpoena. The mathematics has been settled for decades. Apple already ships privacy-preserving cryptographic verification in production: Private Access Tokens use blind signatures to prove a device is legitimate without revealing who owns it [^apple-pat]. The Home Office hasn't considered any of it, because the Home Office isn't talking to anyone who builds this stuff for a living.
 
 ---
 
@@ -102,7 +102,7 @@ There are well-understood technical solutions to all of this. Zero-knowledge pro
 
 None of this comes from people who understand the technology. The government is not listening to security professionals, cryptographers, or the global expert consensus.
 
-500+ scientists say device scanning is technically infeasible [^breyer-scientists]. The cryptography community is unanimous that no safe encryption backdoor exists [^bugs-pockets]. 400+ researchers say age verification must not be deployed at scale [^adguard-letter]. Apple tried client-side scanning and abandoned it as too dangerous. The EU tried Chat Control and it failed. The European Court of Human Rights has already ruled that breaking encryption violates the right to privacy. There are working alternatives - zero-knowledge age proofs, on-device safety classifiers that don't phone home, end-to-end encrypted abuse reporting tools - that the government isn't even discussing.
+500+ scientists say device scanning is technically infeasible [^breyer-scientists]. The cryptography community is unanimous that no safe encryption backdoor exists [^bugs-pockets]. 400+ researchers say age verification must not be deployed at scale [^adguard-letter]. Apple tried client-side scanning and abandoned it as too dangerous. The EU tried Chat Control and it failed. The European Court of Human Rights has already ruled that breaking encryption violates the right to privacy. There are working alternatives - privacy-preserving age verification, on-device safety classifiers that don't phone home, end-to-end encrypted abuse reporting tools - that the government isn't even discussing.
 
 Your response? Press on regardless.
 
@@ -120,7 +120,7 @@ Privacy isn't only for those of us who feel we have something to hide today. It'
 
 It's also for the people who depend on privacy right now, just to stay safe: domestic abuse survivors, LGBTQ+ kids in hostile homes, journalists, whistleblowers, activists, dissidents, the marginalised. Privacy is the floor under all of them.
 
-I notice the chilling effect in myself already. I've moved my phone to GrapheneOS and my email and storage to privacy-focused providers. I think more carefully now about what I search for, what I say, and how exposed my data is at any given moment — which device, which network, which browser. I shouldn't need to. None of us should - and yet the same Children's Bill demanding "tamper-proof" device scanning would, in effect, ban the very operating system I chose in order to protect myself.
+I notice the chilling effect in myself already. I've moved my phone to GrapheneOS and my email and storage to privacy-focused providers. I think more carefully now about what I search for, what I say, and how exposed my data is at any given moment - which device, which network, which browser. I shouldn't need to. None of us should - and yet the same Children's Bill demanding "tamper-proof" device scanning would, in effect, ban the very operating system I chose in order to protect myself.
 
 ## The Labour betrayal
 
@@ -136,7 +136,7 @@ Even if you trust this government, the next one inherits the tools.
 
 Privacy is a one-way tug of war. Every bit we give up, we never get back.
 
-The UK is becoming the most invasive surveillance state in the democratic world — and it is being built by the one party that should know exactly where this leads.
+The UK is becoming the most invasive surveillance state in the democratic world - and it is being built by the one party that should know exactly where this leads.
 
 Prime Minister; until this changes, I'm afraid you and the Labour party no longer have my support.
 
@@ -146,7 +146,7 @@ Prime Minister; until this changes, I'm afraid you and the Labour party no longe
 
 [^lords-dvla]: [Biometric Update: UK Lords reject bid to block police facial recognition searches of DVLA database](https://www.biometricupdate.com/202603/uk-lords-reject-bid-to-block-police-facial-recognition-searches-of-dvla-database)
 
-[^bbw-89]: [Hansard: Facial Recognition (Police Use) debate, 13 Nov 2024 — citing Big Brother Watch](https://hansard.parliament.uk/commons/2024-11-13/debates/E334DF95-2313-4AAC-AA25-D34F8F7C8DD5/FacialRecognitionPoliceUse)
+[^bbw-89]: [Hansard: Facial Recognition (Police Use) debate, 13 Nov 2024 - citing Big Brother Watch](https://hansard.parliament.uk/commons/2024-11-13/debates/E334DF95-2313-4AAC-AA25-D34F8F7C8DD5/FacialRecognitionPoliceUse)
 
 [^cnbc-bridges]: [CNBC: UK court finds facial recognition used by police was unlawful](https://www.cnbc.com/2020/08/11/swp-facial-recognition-unlawful.html)
 
@@ -180,8 +180,6 @@ Prime Minister; until this changes, I'm afraid you and the Labour party no longe
 
 [^bbc-osa-encrypt]: [BBC: Signal would 'walk' from UK if Online Safety Bill undermined encryption](https://www.bbc.co.uk/news/technology-64584001)
 
-[^ccia-ustr]: [CCIA: Comments Regarding Foreign Trade Barriers to U.S. Exports for 2026 Reporting (pp. 247-248)](https://downloads.regulations.gov/USTR-2025-0016-0053/attachment_1.pdf)
-
 [^bugs-pockets]: [Abelson, Anderson, Schneier et al.: "Bugs in our Pockets" (Journal of Cybersecurity, 2024)](https://academic.oup.com/cybersecurity/article/10/1/tyad020/7457370)
 
 [^9to5mac-csam]: [9to5Mac: Apple finally admits the CSAM scanning flaw we all pointed out](https://9to5mac.com/2023/09/01/csam-scanning-flaw/)
@@ -191,6 +189,8 @@ Prime Minister; until this changes, I'm afraid you and the Labour party no longe
 [^echr-podchasov]: [Oxford Human Rights Hub: The ECtHR in Podchasov v. Russia - Preserving Encryption](https://ohrh.law.ox.ac.uk/the-ecthr-in-podchasov-v-russia-preserving-encryption-and-denying-backdoors/)
 
 [^chatcontrol-failed]: [Chat Control proposal fails again after massive public opposition](https://andreafortuna.org/2025/11/01/chat-control-proposal-fails-again-after-massive-public-opposition/)
+
+[^ccia-ustr]: [CCIA: Comments Regarding Foreign Trade Barriers to U.S. Exports for 2026 Reporting (pp. 247-248)](https://downloads.regulations.gov/USTR-2025-0016-0053/attachment_1.pdf)
 
 [^techradar-hostile]: [TechRadar: Creating apps like Signal could be 'hostile activity,' claims UK watchdog](https://www.techradar.com/vpn/vpn-privacy-security/creating-apps-like-signal-or-whatsapp-could-be-hostile-activity-claims-uk-watchdog)
 
@@ -224,11 +224,13 @@ Prime Minister; until this changes, I'm afraid you and the Labour party no longe
 
 [^zkp]: [Wikipedia: Zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof)
 
-[^org-38b]: [ORG: Analysis of Amendment 38B - Children's Wellbeing and Schools Bill](https://www.openrightsgroup.org/publications/childrens-wellbeing-and-schools-bill-org-analysis-of-amendment-38-b/)
+[^apple-pat]: [Apple Developer: Private Access Tokens](https://developer.apple.com/news/?id=huqjyh7k)
 
 [^noyb-open-letter]: [noyb: 127 organisations sign open letter on Digital Omnibus](https://noyb.eu/en/open-letter-digital-omnibus-brings-deregulation-not-simplification)
 
 [^uk-dua-act]: [Data Protection Report: UK Data (Use and Access) Act 2025](https://www.dataprotectionreport.com/2025/07/uk-data-protection-reform-what-you-need-to-know-and-do/)
+
+[^org-38b]: [ORG: Analysis of Amendment 38B - Children's Wellbeing and Schools Bill](https://www.openrightsgroup.org/publications/childrens-wellbeing-and-schools-bill-org-analysis-of-amendment-38-b/)
 
 [^mic-snowden]: [Mic: In One Quote, Snowden Destroyed the Biggest Myth About Privacy](https://www.mic.com/articles/119602/in-one-quote-edward-snowden-summed-up-why-our-privacy-is-worth-fighting-for)
 
