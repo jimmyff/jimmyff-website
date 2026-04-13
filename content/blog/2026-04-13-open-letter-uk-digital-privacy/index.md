@@ -1,5 +1,6 @@
 +++
 title = "An open letter to the UK Government on digital privacy"
+description = "I'm a software engineer and 20-year Labour member, and this is an open letter to the PM warning that the UK is on a dangerous trajectory. I genuinely don't know if the Home Office grasps that banning VPNs, mandating device scanning , and requiring universal identity checks demolishes privacy for everyone -or if this is deliberate. This is my attempt to ask them to reconsider and start listening to the technical community."
 date = 2026-04-13
 [taxonomies]
 tags = ["privacy"]
