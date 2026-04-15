@@ -10,24 +10,20 @@
 <article>{{ page.content | safe }}</article>
 
 
+<style>html.dk #disqus_thread{background:#000;color:#fff}#disqus_thread iframe{color-scheme:light}</style>
 <div id="disqus_thread"></div>
 
 <script>
+// Rewrite oklch rules to hex so Disqus can parse them
 (function(){
   var c=document.createElement('canvas'),x=c.getContext('2d',{willReadFrequently:true});c.width=c.height=1;
   function toHex(v){x.fillStyle=v;x.fillRect(0,0,1,1);var d=x.getImageData(0,0,1,1).data;return'#'+[d[0],d[1],d[2]].map(function(n){return n.toString(16).padStart(2,'0')}).join('')}
-  function convert(s){return s?s.replace(/oklch\([^)]+\)/g,function(m){return toHex(m)}):s}
-  // Shim CSSStyleRule.cssText
-  var cssDesc=Object.getOwnPropertyDescriptor(CSSStyleRule.prototype,'cssText');
-  if(cssDesc)Object.defineProperty(CSSStyleRule.prototype,'cssText',{get:function(){return convert(cssDesc.get.call(this))},set:cssDesc.set});
-  // Shim CSSStyleDeclaration
-  var origGetProp=CSSStyleDeclaration.prototype.getPropertyValue;
-  CSSStyleDeclaration.prototype.getPropertyValue=function(p){return convert(origGetProp.call(this,p))};
+  for(var i=0;i<document.styleSheets.length;i++){try{var s=document.styleSheets[i];for(var j=s.cssRules.length-1;j>=0;j--){var r=s.cssRules[j];if(r.cssText&&/oklch/.test(r.cssText)){s.deleteRule(j);s.insertRule(r.cssText.replace(/oklch\([^)]+\)/g,function(m){return toHex(m)}),j)}}}catch(e){}}
 })();
 
     var disqus_config = function () {
-        this.page.url = "{{ current_url | safe}}";      
-        this.page.identifier = "guestbook";     
+        this.page.url = "{{ current_url | safe}}";
+        this.page.identifier = "guestbook";
     };
 
     (function() {
@@ -36,6 +32,7 @@
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
+    new MutationObserver(function(){if(typeof DISQUS!=='undefined')DISQUS.reset({reload:true,config:disqus_config})}).observe(document.documentElement,{attributes:true,attributeFilter:['class']});
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">guestbook powered by Disqus.</a></noscript>
 
